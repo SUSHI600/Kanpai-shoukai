@@ -20,7 +20,7 @@
                         echo '<td>',$row['price'],'</td>';
                         echo '<td>',$row['number'],'</td>';
                         echo '<td>';
-                        echo '<a href="ren6-7-output.php?id=',$row['id'],'">削除</a>';
+                        echo '<a href="?id=',$row['id'],'">削除</a>';
                         echo '</td>';
                         echo '</th>';
                         echo "\n";
