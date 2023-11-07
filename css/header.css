@@ -1,0 +1,81 @@
+header{
+    background-color: #d9d9d9;
+    height: 55px;
+}
+span {
+    left: 200;
+}
+li{
+    display: block;
+}
+.searchbox{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: large;
+    width: 400px;
+    text-align: center;
+}
+.sbox{
+    padding-top: 14px;
+    padding-left: 150px;
+}
+.search{
+    position: absolute;
+    padding-top: 13px;
+    right: 460px;
+}
+.mypage{
+    position: absolute;
+    right: 180px;
+}
+.cart{
+    padding-top: 5px;
+    position: absolute;
+    right: 110px;
+}
+.slidebtn{
+    padding-top: 5px;
+    position: absolute;
+    right: -420px;
+}
+.topmenu{
+    display: flex;
+}
+/* 画像で作るdrop downリスト
+-----------------------------------------*/
+/* Topmenu部分 */
+.mod_dropnavi ul.topmenu{
+    width:920px;
+    height:45px;
+}
+.mod_dropnavi ul.topmenu li{
+    float:left;
+    position:relative;
+}
+.mod_dropnavi ul.topmenu li.topmenu01{width:150px;}
+.mod_dropnavi ul.topmenu li.topmenu02{width:149px;}
+.mod_dropnavi ul.topmenu li.topmenu03{width:149px;}
+.mod_dropnavi ul.topmenu li.topmenu03{width:149px;}
+ 
+.mod_dropnavi ul.topmenu li a{
+    display:block;
+    width:100%;
+    height:100%;
+}
+ 
+/* サブ階層部分 */
+.mod_dropnavi ul.topmenu li ul.submenu{
+    width:150px;
+    position:absolute;
+    top:54px;
+    left:-66px;
+}
+.mod_dropnavi ul.topmenu li ul.submenu.close {
+ display:none;
+}
+.mod_dropnavi ul.topmenu li ul.submenu li{
+    height:44px;
+    clear:both;
+}

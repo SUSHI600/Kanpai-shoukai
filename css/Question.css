@@ -1,0 +1,21 @@
+h1{
+    background-color: #d9d9d9;
+    height: 55px;
+}
+span{
+    font-weight: bold;
+}
+.radiobutton{
+    display: none;
+}
+label{
+    background-color: whitesmoke;
+    padding: 7px 18px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.radiobutton:checked + label{
+    background-color: skyblue;
+}
