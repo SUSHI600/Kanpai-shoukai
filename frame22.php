@@ -2,9 +2,9 @@
 <html1 long="ja">
     <head>
     <meta charset="UTF-8">
+    <?php require 'header.php' ?>
 </head>
 <body>
-<?php require 'header.php' ?>
     <p>新規登録</p>
     <p>ユーザーネーム:<input type="txet" value=""></p>
     <p>パスワード:<input type="password" value=""></p>
