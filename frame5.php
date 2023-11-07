@@ -7,6 +7,7 @@
             <title></title>
         </head>
         <body>
+        <?php require 'header.php' ?>
             <h2>現在カートに～件の商品が入っています。</h2>
             <table>
                 <tr><th>商品ID</th><th>商品名</th><th>ジャンル</th><th>価格</th><th>個数</th></tr>

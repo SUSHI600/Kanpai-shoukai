@@ -7,6 +7,7 @@
     <title></title>
 </head>
 <body>
+<?php require 'header.php' ?>
     <h4>本当に購入しますか？</h4><br>
     <button type="submit">戻る</button>
     <button type="submit">購入する</button>

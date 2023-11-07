@@ -7,6 +7,7 @@
     <title></title>
 </head>
 <body>
+<?php require 'header.php' ?>
     <h4>削除しました。</h4>
     <button type="submit">カートに戻る</button>
 </body>

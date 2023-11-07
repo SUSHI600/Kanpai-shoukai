@@ -7,6 +7,7 @@
     <title></title>
 </head>
 <body>
+<?php require 'header.php' ?>
     <h4>退会完了しました。</h4><br>
     <button type="submit">トップページへ</button>
 </body>

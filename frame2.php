@@ -6,6 +6,7 @@
     <title></title>
 </head>
 <body>
+<?php require 'header.php' ?>
     メールアドレス<input type="text" name="email"><br>
     パスワード<input type="password" name="pass"><br>
     <button type="submit">ログイン</button><br>

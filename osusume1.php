@@ -6,6 +6,7 @@
     <script src="osusume1.js"></script>
 </head>
 <body>
+<?php require 'header.php' ?>
     <p>おすすめ</p>
     <span onclick="alcohol()" value="お酒">お酒</span>
     <span onclick="appetizers()" value="おつまみ">おつまみ</span>
