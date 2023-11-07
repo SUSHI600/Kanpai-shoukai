@@ -8,9 +8,9 @@
 <?php require 'header.php' ?>
     <p>おすすめ</p>
     
-    <span onclick="alcohol()" value="ビール">お酒</span>
-    <span onclick="appetizers()" value="ワイン">おつまみ</span>
-    <span onclick="alcoholset()" value="リキュール">晩酌セット<br></span>
+    <span onclick="alcohol()" value="ビール">ビール</span>
+    <span onclick="appetizers()" value="ワイン">ワイン</span>
+    <span onclick="alcoholset()" value="リキュール">リキュール<br></span>
     <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;>
     <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;>
     <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;><br>
