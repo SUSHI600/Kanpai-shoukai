@@ -11,6 +11,6 @@
     パスワード<input type="password" name="pass"><br>
     <button type="submit">ログイン</button><br>
     アカウントがない方は
-    <a href="">こちら</a>
+    <a href="frame22.php">こちら</a>
 </body>
 </html>
