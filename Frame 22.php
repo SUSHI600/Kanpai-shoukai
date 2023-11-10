@@ -6,10 +6,10 @@
 <body>
 <?php require 'header.php' ?>
     <p>新規登録</p>
-    <p>ユーザーネーム:<input type="txet" value=""></p>
+    <p>ユーザーネーム:<input type="text" value=""></p>
     <p>パスワード:<input type="password" value=""></p>
     <p>パスワード確認:<input type="password" value=""></p>
-    <p>メールアドレス:<input type="txet" value=""></p>
+    <p>メールアドレス:<input type="text" value=""></p>
 
 生年月日:<select name="year">
     <?php
