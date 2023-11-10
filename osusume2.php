@@ -11,7 +11,16 @@
     <span onclick="alcohol()" value="ビール">ビール</span>
     <span onclick="appetizers()" value="ワイン">ワイン</span>
     <span onclick="alcoholset()" value="リキュール">リキュール<br></span>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;><br>
+    <img src="img/wa1.jpg" alt="wine"width=150; heigth=50;>
+    <img src="img/wa2.jpg" alt="wine"width=150; heigth=50;>
+    <img src="img/wa3.jpg" alt="wine"width=150; heigth=50;><br>
+    <img src="img/wam1.jpg" alt="wine"width=150; heigth=50;>
+    <img src="img/wam2.jpg" alt="wine"width=150; heigth=50;>
+    <img src="img/wam3.jpg" alt="wine"width=150; heigth=50;><br>
+    <img src="img/we1.jpg" alt="wine"width=150; heigth=50;>
+    <img src="img/604570a287904-186x800.jpg.webp" alt="wine"width=150; heigth=50;>
+    <img src="img/we3.jpg" alt="wine"width=150; heigth=50;><br>
+    <img src="img/wf1.jpg" alt="wine"width=150; heigth=50;>
+    <img src="img/wf2.png" alt="wine"width=150; heigth=50;>
+    <img src="img/wf3.jpg" alt="wine"width=150; heigth=50;><br>
     </body>
