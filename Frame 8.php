@@ -15,6 +15,10 @@
         }else{
             $sql=$pdo->query('select * from Items');
         }
+        foreach($sql as $row){
+            $id = $row['id'];
+            echo '<a href="detail.php?id=',$id,'">',"<img src=",$row['image'],">",'</a>';
+        }
     ?>
 </body>
 </html>
