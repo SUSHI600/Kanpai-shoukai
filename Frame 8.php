@@ -5,60 +5,16 @@
 </head>
 
 <body>
-<?php require 'header.php' ?>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;><br>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;><br>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;><br>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;><br>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;><br>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;><br>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;><br>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;><br>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;><br>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;><br>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;><br>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;><br>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;><br>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;><br>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;><br>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;><br>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;><br>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;>
-    <img src="img/egao-mendako.png" alt="egao-mendako.png"width=150; heigth=50;><br>
+    <?php require 'header.php' ?>
+    <?php require 'db-connect.php' ?>
+    <?php
+        $pdo=new PDO($connect,USER,PASS);
+        if(isset($_POST['keyword'])){
+            $sql=$pdo->prepare('select * from Items where name like ?');
+            $sql->execute(['%'.$_POST['keyword'].'%']);
+        }else{
+            $sql=$pdo->query('select * from Items');
+        }
+    ?>
 </body>
 </html>
