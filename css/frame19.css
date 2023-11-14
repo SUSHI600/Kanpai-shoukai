@@ -1,18 +1,15 @@
 body {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     margin: 0;
-    font-family: Arial, sans-serif; /* 任意のフォントを指定してください */
 }
 
-p {
-    margin: 10px 0;
-}
-
-select, input, button {
-    margin-bottom: 10px;
+div {
+    text-align: center;
 }
 
 form {
-    text-align: center;
+    margin-top: 20px;
 }
