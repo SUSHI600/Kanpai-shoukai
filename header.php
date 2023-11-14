@@ -4,7 +4,7 @@
 <script type="text/javascript" src="js/header.js"></script>
 <body>
   <header>
-    <form action="" method="post">
+    <form action="frame8.php" method="post">
       <span class="mod_dropnavi ex_clearfix">
         <ul class="topmenu">
           <div class="logo">
