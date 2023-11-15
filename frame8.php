@@ -12,17 +12,21 @@
         if(isset($_POST['keyword'])){
             switch($_POST['keyword']){
                 case 'アジア':
+                    $sql=$pdo->prepare('select * from items where name like ? or country_id = 1');
                     break;
                 case 'アメリカ':
+                    $sql=$pdo->prepare('select * from items where name like ? or country_id = 2');
                     break;
                 case 'ヨーロッパ':
+                    $sql=$pdo->prepare('select * from items where name like ? or country_id = 3');
                     break;
                 case 'アフリカ':
+                    $sql=$pdo->prepare('select * from items where name like ? or country_id = 4');
                     break;
                 default:
                 $sql=$pdo->prepare('select * from items where name like ?');
-                $sql->execute(['%'.$esc.'%']);
             }
+            $sql->execute(['%'.$esc.'%']);
         }else{
             $sql=$pdo->query('select * from items');
         }
