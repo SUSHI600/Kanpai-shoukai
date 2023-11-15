@@ -11,9 +11,13 @@
         $pdo=new PDO($connect,USER,PASS);
         if(isset($_POST['keyword'])){
             switch($_POST['keyword']){
-                case '':
+                case 'アジア':
                     break;
-                case '':
+                case 'アメリカ':
+                    break;
+                case 'ヨーロッパ':
+                    break;
+                case 'アフリカ':
                     break;
                 default:
                 $sql=$pdo->prepare('select * from items where name like ?');
