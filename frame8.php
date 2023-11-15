@@ -10,8 +10,15 @@
     <?php
         $pdo=new PDO($connect,USER,PASS);
         if(isset($_POST['keyword'])){
-            $sql=$pdo->prepare('select * from items where name like ?');
-            $sql->execute(['%'.$_POST['keyword'].'%']);
+            switch($_POST['keyword']){
+                case '':
+                    break;
+                case '':
+                    break;
+                default:
+                $sql=$pdo->prepare('select * from items where name like ?');
+                $sql->execute(['%'.$esc.'%']);
+            }
         }else{
             $sql=$pdo->query('select * from items');
         }
