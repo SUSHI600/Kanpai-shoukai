@@ -10,7 +10,7 @@
   <div class="container-fluid">
     <a class="navbar-brand" href="#">酒楽広場</a>
     <form class="d-flex" action="frame8.php" method="post">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search">
       <button class="btn btn-outline-success" type="submit">Search</button>
     </form>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
