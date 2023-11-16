@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    justify-content: flex-start; /* Align items to the top */
+    height: 100vh;
+    margin: 0;
+    font-size: 20px; /* Adjust the font size as needed */
+}
+
+/* Add any additional styling for your form if needed */
+p {
+    margin: 10px;
+    font-size: 20px; /* Adjust the font size as needed */
+}
+
+/* Add more styles as needed */

@@ -2,6 +2,7 @@
 <html1 long="ja">
     <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/frame22.css">
 </head>
 <body>
     <p>会員情報</p>
