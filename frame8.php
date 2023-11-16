@@ -23,6 +23,18 @@
                 case 'アフリカ':
                     $sql=$pdo->prepare('select * from items where name like ? or country_id = 4');
                     break;
+                case 'ビール':
+                    $sql=$pdo->prepare('select * from items where name like ? 
+                    or id = (select id from liquors where liquor_id = 1)');
+                    break;
+                case 'ワイン':
+                    $sql=$pdo->prepare('select * from items where name like ? 
+                    or id = (select id from liquors where liquor_id = 2)');
+                    break;
+                case 'リキュール':
+                    $sql=$pdo->prepare('select * from items where name like ? 
+                    or id = (select id from liquors where liquor_id = 3)');
+                    break;
                 default:
                 $sql=$pdo->prepare('select * from items where name like ?');
             }
