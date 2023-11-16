@@ -26,7 +26,7 @@
                 default:
                 $sql=$pdo->prepare('select * from items where name like ?');
             }
-            $sql->execute(['%'.$esc.'%']);
+            $sql->execute(['%'.$_POST['search'].'%']);
         }else{
             $sql=$pdo->query('select * from items');
         }
