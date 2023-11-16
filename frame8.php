@@ -9,8 +9,8 @@
     <?php require 'db-connect.php' ?>
     <?php
         $pdo=new PDO($connect,USER,PASS);
-        if(isset($_POST['keyword'])){
-            switch($_POST['keyword']){
+        if(isset($_POST['search'])){
+            switch($_POST['search']){
                 case 'アジア':
                     $sql=$pdo->prepare('select * from items where name like ? or country_id = 1');
                     break;
