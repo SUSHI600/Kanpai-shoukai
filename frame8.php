@@ -44,7 +44,7 @@
         }
         foreach($sql as $row){
             $id = $row['id'];
-            echo '<a href="detail.php?id=',$id,'">',"<img src=",$row['image'],">",'</a>';
+            echo '<a href="frame9.php?id=',$id,'">',"<img src=",$row['image'],">",'</a>';
         }
     ?>
 </body>
