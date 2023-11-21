@@ -22,4 +22,3 @@
     }
 ?>
 <?php require 'footer.php'; ?>
-    
