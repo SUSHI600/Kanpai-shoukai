@@ -18,7 +18,7 @@
     <img src="img/wam2.jpg" alt="wine"width=150; heigth=50;>
     <img src="img/wam3.jpg" alt="wine"width=150; heigth=50;><br>
     <img src="img/we1.jpg" alt="wine"width=150; heigth=50;>
-    <img src="img/604570a287904-186x800.jpg.webp" alt="wine"width=150; heigth=50;>
+    <img src="img/we2.jpg" alt="wine"width=150; heigth=50;>
     <img src="img/we3.jpg" alt="wine"width=150; heigth=50;><br>
     <img src="img/wf1.jpg" alt="wine"width=150; heigth=50;>
     <img src="img/wf2.png" alt="wine"width=150; heigth=50;>
