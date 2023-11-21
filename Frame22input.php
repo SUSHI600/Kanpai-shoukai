@@ -24,35 +24,29 @@
     echo '<tr><td>メールアドレス:</td><td>';
     echo '<input type="text" name="e-mail" value="', $mail, '">';
     echo '</td></tr>';
+    echo '<tr><td>生年月日:</td><td>';
+    echo '<select name="year">';
+        for($i=1930;$i<2004;$i++){
+            echo '<option value="',$i,'">',$i,'</option>';
+        }
+    echo '</select>';
+    echo '年';
+    echo '<select name="month">';
+        for($i=1;$i<13;$i++){
+            echo '<option value="',$i,'">',$i,'</option>';
+        }
+    echo '</select>';
+    echo '月';
+    echo '<select name="day">';
+        for($i=1;$i<32;$i++){
+            echo '<option value="',$i,'">',$i,'</option>';
+        }
+    echo '</select>';
+    echo '日';
+    echo '</td></tr>';
     echo '</table>';
     echo '<input type="submit" value="登録">';
     echo '</form>';
 ?>
-
-生年月日:<select name="year">
-    <?php
-    for($i=1930;$i<2004;$i++){
-        echo '<option value="',$i,'">',$i,'</option>';
-    }
-    ?>
-</select>
-年
-<select name="month">
-    <?php
-    for($i=1;$i<13;$i++){
-        echo '<option value="',$i,'">',$i,'</option>';
-        
-    }
-    ?>
-</select>
-月
-<select name="day">
-    <?php
-    for($i=1;$i<32;$i++){
-        echo '<option value="',$i,'">',$i,'</option>';
-    }
-    ?>
-</select>
-日
 </body>
 </html>
