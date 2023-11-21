@@ -28,6 +28,10 @@
                 $sql=$pdo->query('select * from items where name like "リキュール" 
                 or id in (select id from liquors where liquor_id = 3)');
                 break;
+            case 'おつまみ':
+                $sql=$pdo->query('select * from items where name like "おつまみ" 
+                or category_id = 1');
+                break;
             default:
             $sql=$pdo->prepare('select * from items where name like ?');
             $sql->execute(['%'.$_POST['search'].'%']);
