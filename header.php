@@ -18,8 +18,8 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light ">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">酒楽広場</a>
-        <form action="frame8.php" method="post" name="search" class="d-flex justify-content-center" style="width: 60%; padding:0 60px 0 250px;">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <form action="frame8.php" method="post" class="d-flex justify-content-center" style="width: 60%; padding:0 60px 0 250px;">
+          <input class="form-control me-2" type="search" name="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"

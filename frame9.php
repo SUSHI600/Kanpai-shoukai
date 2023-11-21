@@ -5,7 +5,7 @@
     $sql=$pdo->prepare('select * from items where id=?');
     $sql->execute([$_GET['id']]);
     foreach($sql as $row){
-        echo '<p><img alt="image" src="img/',$row['id'],'.jpg"></p>';
+        echo '<p><img alt="image" src="',$row['image'],'"></p>';
         echo '<form action="cart-insert.php" method="post">';
         echo '<p>商品名:',$row['name'],'</p>';
         echo '<p>',$row['info'],'</p>';

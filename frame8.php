@@ -5,33 +5,41 @@
     if(isset($_POST['search'])){
         switch($_POST['search']){
             case 'アジア':
-                $sql=$pdo->prepare('select * from items where name like ? or country_id = 1');
+                $sql=$pdo->query('select * from items where name like "アジア" or country_id = 1');
                 break;
             case 'アメリカ':
-                $sql=$pdo->prepare('select * from items where name like ? or country_id = 2');
+                $sql=$pdo->query('select * from items where name like "アメリカ" or country_id = 2');
                 break;
             case 'ヨーロッパ':
-                $sql=$pdo->prepare('select * from items where name like ? or country_id = 3');
+                $sql=$pdo->query('select * from items where name like "ヨーロッパ" or country_id = 3');
                 break;
             case 'アフリカ':
-                $sql=$pdo->prepare('select * from items where name like ? or country_id = 4');
+                $sql=$pdo->query('select * from items where name like "アフリカ" or country_id = 4');
                 break;
             case 'ビール':
-                $sql=$pdo->prepare('select * from items where name like ? 
-                or id = (select id from liquors where liquor_id = 1)');
+                $sql=$pdo->query('select * from items where name like "ビール" 
+                or id in (select id from liquors where liquor_id = 1)');
                 break;
             case 'ワイン':
-                $sql=$pdo->prepare('select * from items where name like ? 
-                or id = (select id from liquors where liquor_id = 2)');
+                $sql=$pdo->query('select * from items where name like "ワイン" 
+                or id in (select id from liquors where liquor_id = 2)');
                 break;
             case 'リキュール':
-                $sql=$pdo->prepare('select * from items where name like ? 
-                or id = (select id from liquors where liquor_id = 3)');
+                $sql=$pdo->query('select * from items where name like "リキュール" 
+                or id in (select id from liquors where liquor_id = 3)');
+                break;
+            case '酒':
+                $sql=$pdo->query('select * from items where name like "酒" 
+                or category_id = 0');
+                break;
+            case 'つまみ':
+                $sql=$pdo->query('select * from items where name like "つまみ" 
+                or category_id = 1');
                 break;
             default:
             $sql=$pdo->prepare('select * from items where name like ?');
+            $sql->execute(['%'.$_POST['search'].'%']);
         }
-        $sql->execute(['%'.$_POST['search'].'%']);
     }else{
         $sql=$pdo->query('select * from items');
     }
