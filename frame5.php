@@ -13,7 +13,7 @@
                 <tr><th>商品ID</th><th>商品名</th><th>ジャンル</th><th>価格</th><th>個数</th></tr>
                 <?php
                     $pdo=new PDO($connect, USER, PASS);
-                    foreach($pdo->query('select * from cart')as $row) {
+                    foreach($pdo->query('select * from carts')as $row) {
                         echo '<tr>';
                         echo '<td>',$row['id'],'</td>';
                         echo '<td>',$row['name'],'</td>';
