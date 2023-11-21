@@ -18,15 +18,15 @@
                 break;
             case 'ビール':
                 $sql=$pdo->query('select * from items where name like "ビール" 
-                or id = (select id from liquors where liquor_id = 1)');
+                or id in (select id from liquors where liquor_id = 1)');
                 break;
             case 'ワイン':
                 $sql=$pdo->query('select * from items where name like "ワイン" 
-                or id = (select id from liquors where liquor_id = 2)');
+                or id in (select id from liquors where liquor_id = 2)');
                 break;
             case 'リキュール':
                 $sql=$pdo->query('select * from items where name like "リキュール" 
-                or id = (select id from liquors where liquor_id = 3)');
+                or id in (select id from liquors where liquor_id = 3)');
                 break;
             default:
             $sql=$pdo->prepare('select * from items where name like ?');
