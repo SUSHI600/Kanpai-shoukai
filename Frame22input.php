@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html1 long="ja">
+<html long="ja">
     <head>
     <meta charset="UTF-8">
 </head>
 <body>
 <?php require 'db-connect.php'; ?>
-<?php require 'header.php'; ?>
     <h1>新規登録</h1>
-
+    <h3>全て必須項目です</h3>
 <?php
-    $name=$password=$password1=$mail='';
+    $name=$password=$password1=$e_mail=$postcode=$address='';
     echo '<form action="Frame22output.php" method="post">';
     echo '<table>';
     echo '<tr><td>ユーザーネーム：</td><td>';
@@ -22,7 +21,7 @@
     echo '<input type="password" name="password1" value="', $password1, '">';
     echo '</td></tr>';
     echo '<tr><td>メールアドレス:</td><td>';
-    echo '<input type="text" name="e-mail" value="', $mail, '">';
+    echo '<input type="text" name="e_mail" value="', $e_mail, '">';
     echo '</td></tr>';
     echo '<tr><td>生年月日:</td><td>';
     echo '<select name="year">';
@@ -43,6 +42,12 @@
         }
     echo '</select>';
     echo '日';
+    echo '</td></tr>';
+    echo '<tr><td>郵便番号:</td><td>';
+    echo '<input type="text" name="postcode" value="', $postcode, '">';
+    echo '</td></tr>';
+    echo '<tr><td>住所:</td><td>';
+    echo '<input type="text" name="address" value="', $address, '">';
     echo '</td></tr>';
     echo '</table>';
     echo '<input type="submit" value="登録">';

@@ -1,46 +1,31 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <?php require 'header.php' ?>
-    <link rel="stylesheet" type="text/css" href="css/frame22.css">
-</head>
-<body>
-        <p>新規登録</p>
-        <p>ユーザーネーム:<input type="text" value=""></p>
-        <p>パスワード:<input type="password" value=""></p>
-        <p>パスワード確認:<input type="password" value=""></p>
-        <p>メールアドレス:<input type="text" value=""></p>
-</body>
-    
-<body1>
-        生年月日:<select name="year">
-            <?php
-            for($i=1930; $i<2004; $i++){
-                echo '<option value="', $i, '">', $i, '</option>';
-            }
-            ?>
-        </select>
-        年
-        <select name="month">
-            <?php
-            for($i=1; $i<13; $i++){
-                echo '<option value="', $i, '">', $i, '</option>';
-            }
-            ?>
-        </select>
-        月
-        <select name="day">
-            <?php
-            for($i=1; $i<32; $i++){
-                echo '<option value="', $i, '">', $i, '</option>';
-            }
-            ?>
-        </select>
-        日
+<?php session_start(); ?>
+<?php require 'db-connect.php'; ?>
+<?php
+    if (empty($_POST['name']) || empty($_POST['e_mail']) || empty($_POST['postcode']) || empty($_POST['address']) || empty($_POST['password'])) {
+        echo '空欄の項目を埋めてください。';
+    } elseif ($_POST['password'] !== $_POST['password1']) {
+        echo 'パスワードとパスワード確認が一致しません。';
+    } elseif (!filter_var($_POST['e_mail'], FILTER_VALIDATE_EMAIL)) {
+        echo '有効なメールアドレスを入力してください。';
+    } else {
+    $birthday = $_POST['year'] . '-' . $_POST['month'] . '-' . $_POST['day'];
 
-        <form action="home.php" method="post">
-            <p><button type="submit">登録</button></p>
-        </form>
-    </body1>
-</html>
+    $pdo=new PDO('mysql:host=mysql216.phy.lolipop.lan;dbname=LAA1516892-kaihatu;charset=utf8','LAA1516892','iu8yt5tghji9jhg');
+    if(isset($_SESSION['user'])){
+       $id=$_SESSION['user']['id'];
+       $sql=$pdo->prepare('select * from user where id!=? and name=?');
+       $sql->execute([$id, $_POST['name']]);
+    }else{
+       $sql=$pdo->prepare('select * from user where name=?');
+       $sql->execute([$_POST['name']]);
+    }
+    if(empty($sql->fetchAll())){
+        $sql=$pdo->prepare('insert into user values(null,?,?,?,?,?,?)');
+        $sql->execute([
+            $_POST['name'], $birthday, $_POST['e_mail'], password_hash($_POST['password'], PASSWORD_DEFAULT), $_POST['postcode'], $_POST['address']]);
+            echo 'お客様情報を登録しました。';
+    }else{
+        echo 'ログイン名がすでに使用されていますので、変更してください。';
+    }
+    }
+?>
