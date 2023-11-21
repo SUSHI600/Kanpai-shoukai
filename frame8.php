@@ -28,8 +28,12 @@
                 $sql=$pdo->query('select * from items where name like "リキュール" 
                 or id in (select id from liquors where liquor_id = 3)');
                 break;
-            case 'おつまみ':
-                $sql=$pdo->query('select * from items where name like "おつまみ" 
+            case '酒':
+                $sql=$pdo->query('select * from items where name like "酒" 
+                or category_id = 0');
+                break;
+            case 'つまみ':
+                $sql=$pdo->query('select * from items where name like "つまみ" 
                 or category_id = 1');
                 break;
             default:
