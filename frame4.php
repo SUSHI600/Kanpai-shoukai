@@ -21,7 +21,6 @@
             font-size: 1.5em; /* Adjust the font size as needed */
         }
     </style>
-    <title>Your Title Here</title>
 </head>
 <body>
     <?php require 'header.php' ?>
