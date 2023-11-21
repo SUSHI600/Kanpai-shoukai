@@ -29,10 +29,10 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
           <div class="navbar-nav">
               <a class="nav-link active" aria-current="page" href="frame16.php">TOP</a>
-              <a class="nav-link" href="frame5.php">カート</a>
-              <a class="nav-link" href="Frame22input.php">ログイン/新規登録</a>
-              <a class="nav-link" href="osusume1.php">おすすめ</a>
-              <a class="nav-link" href="frame21.php">購入履歴</a>
+              <a class="nav-link" aria-current="page" href="frame5.php">カート</a>
+              <a class="nav-link" aria-current="page" href="Frame22input.php">ログイン/新規登録</a>
+              <a class="nav-link" aria-current="page" href="osusume1.php">おすすめ</a>
+              <a class="nav-link" aria-current="page" href="frame21.php">購入履歴</a>
           </div>
         </div>
     </div>
