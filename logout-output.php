@@ -9,4 +9,4 @@ echo'ログアウトしました。';
 echo'すでにログアウトしています。';
 }
 ?>
-<?php require '../footer.php'; ?>
+<?php require 'footer.php'; ?>

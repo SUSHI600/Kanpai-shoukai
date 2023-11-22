@@ -6,4 +6,4 @@
 <input type="submit" value="ログイン"> アカウントがない方は
     <a href="frame22input.php">こちら</a>
 </form>
-<?php require '../footer.php'; ?>
+<?php require 'footer.php'; ?>
