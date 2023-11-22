@@ -11,7 +11,7 @@
     <?php include './db-connect.php'; ?>
 
     <?php
-    $userId = 12345;    // ダミーID
+    $userId = 5;    // テスト用ID
     $today = date("Y-m-d"); //今日の日付
     $items = array();   // 商品ID
     $price = array();   // 商品単価
@@ -66,7 +66,10 @@
         echo '<div class="div7 container-fluid">';
         echo '<p class="row justify-content-center">エラーが発生しました。</p>';
         echo '<p class="row justify-content-center error">', $e->getMessage(), '</p>';
+        echo '</div>';
     }
+
+    $pdo = null;
     ?>
 
     <?php include './footer.php'; ?>
