@@ -1,5 +1,5 @@
-<?php require '.. /header.php'; ?>
+<?php require 'header.php'; ?>
 
 <p>ログアウトしますか？</p>
 <a href="logout-output.php">ログアウト</a>
-<?php require '../footer.php'; ?>
+<?php require 'footer.php'; ?>
