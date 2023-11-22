@@ -9,7 +9,7 @@
     <h3>全て必須項目です</h3>
 <?php
     $name=$password=$password1=$e_mail=$postcode=$address='';
-    echo '<form action="Frame22output.php" method="post">';
+    echo '<form action="frame22output.php" method="post">';
     echo '<table>';
     echo '<tr><td>ユーザーネーム：</td><td>';
     echo '<input type="text" name="name" value="', $name, '">';
