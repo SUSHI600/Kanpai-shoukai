@@ -2,8 +2,8 @@
 <?php require '.. /header.php'; ?>
 
 <?php
-if (isset ($_SESSION['customer'])) {
-unset ($_SESSION['customer']);
+if (isset ($_SESSION['user'])) {
+unset ($_SESSION['user']);
 echo'ログアウトしました。';
 } else {
 echo'すでにログアウトしています。';
