@@ -18,7 +18,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light ">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">酒楽広場</a>
-        <form action="frame8.php" method="post" class="d-flex justify-content-center" style="width: 60%; padding:0 60px 0 250px;">
+        <form action="search.php" method="post" class="d-flex justify-content-center" style="width: 60%; padding:0 60px 0 250px;">
           <input class="form-control me-2" type="search" name="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
@@ -28,11 +28,11 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="frame16.php">TOP</a>
+              <a class="nav-link active" aria-current="page" href="toppage.php">TOP</a>
               <a class="nav-link" aria-current="page" href="frame5.php">カート</a>
               <a class="nav-link" aria-current="page" href="frame2.php">ログイン/新規登録</a>
-              <a class="nav-link" aria-current="page" href="osusume1.php">おすすめ</a>
-              <a class="nav-link" aria-current="page" href="frame21.php">購入履歴</a>
+              <a class="nav-link" aria-current="page" href="recombeer.php">おすすめ</a>
+              <a class="nav-link" aria-current="page" href="buyhistory.php">購入履歴</a>
           </div>
         </div>
     </div>
