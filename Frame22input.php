@@ -5,6 +5,7 @@
 </head>
 <body>
 <?php require 'db-connect.php'; ?>
+<?php require 'header.php'; ?>
     <h1>新規登録</h1>
     <h3>全て必須項目です</h3>
 <?php
