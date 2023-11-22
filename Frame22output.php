@@ -24,6 +24,9 @@
         $sql->execute([
             $_POST['name'], $birthday, $_POST['e_mail'], password_hash($_POST['password'], PASSWORD_DEFAULT), $_POST['postcode'], $_POST['address']]);
             echo 'お客様情報を登録しました。';
+            echo '<form action="frame16.php" method="post">';
+            echo '<input type="submit" value="TOPページへ">';
+            echo '</form>';
     }else{
         echo 'ログイン名がすでに使用されていますので、変更してください。';
     }
