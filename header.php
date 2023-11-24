@@ -23,7 +23,7 @@
           <div class="navbar-nav">
               <a class="nav-link active" aria-current="page" href="toppage.php">TOP</a>
               <a class="nav-link" aria-current="page" href="frame5.php">カート</a>
-              <a class="nav-link" aria-current="page" href="login-input.php">ログイン/新規登録</a>
+              <a class="nav-link" aria-current="page" href="mypage.php">マイページ</a>
               <a class="nav-link" aria-current="page" href="recombeer.php">おすすめ</a>
               <a class="nav-link" aria-current="page" href="buyhistory.php">購入履歴</a>
           </div>
