@@ -19,5 +19,6 @@
         echo '</form>';
     }else{
         header('Location: ./login-input.php');
+        exit();
     }
 ?>
