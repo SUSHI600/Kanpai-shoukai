@@ -8,9 +8,10 @@
     <div class="card">
     <div class="row g-0">
         <div class="col-5 col-sm-4">
+        
        <?php
        foreach($sql as $row){
-       echo '<p><img alt="image" src="',$row['image'],'"></p>';
+       echo '<p><img alt="image" class="img-fluid w-100" src="',$row['image'],'"></p>';
        ?>
         </div>
         <div class="col-7 col-sm-8">
