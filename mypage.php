@@ -16,11 +16,8 @@
         echo $sql['birthday'];
         echo '<form action="mpupdate.php">';
         echo '<input type="submit" value="更新">';
-        echo '</form>'
+        echo '</form>';
     }else{
         echo 'ログインしてください';
     }
 ?>
-<form action="mpupdate.php">
-    <input type="submit" value="更新">
-</form>
