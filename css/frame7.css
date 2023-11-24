@@ -11,28 +11,12 @@
     left: 0;
     right: 0;
     margin: 2rem auto;
-    text-decoration: none;
-}
-
-.background {
-    position: absolute;
-    height: 12px;
-    background-color: rgb(128 128 128 / 16%);
-    top: -.2rem;
-    left: 0;
-    right: 0;
-    margin: .9rem auto;
-    border-radius: 50px;
-    transition: .2s all;
+    text-underline-offset: 2px;
+    color: #000;
 }
 
 .div7 a:hover {
     .background {
         background-color: rgb(128 128 128 / 30%);
     }
-}
-
-.error {
-    color: rgb(182, 0, 0);
-    background-color: rgba(236, 236, 0, 0.599);
 }
