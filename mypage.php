@@ -3,9 +3,9 @@
 <head>
 <?php include 'header.php'; ?>
 <?php include 'db-connect.php'; ?>
-<h2>マイページ</h2>
 <?php
     if(isset($_SESSION['user'])){
+        echo '<h2>マイページ</h2>';
         $pdo=new PDO($connect,USER,PASS);
         $sql=$pdo->query('select * from user where id=8');
         echo '<h2>ユーザーネーム</h2>';
