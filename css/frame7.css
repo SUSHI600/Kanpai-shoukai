@@ -14,9 +14,3 @@
     text-underline-offset: 2px;
     color: #000;
 }
-
-.div7 a:hover {
-    .background {
-        background-color: rgb(128 128 128 / 30%);
-    }
-}
