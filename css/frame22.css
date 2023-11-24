@@ -1,18 +1,53 @@
-body {
+@charset "utf-8";
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 600;
     text-align: center;
-    height: 100vh;
-    margin: 0;
-    font-family: Arial, sans-serif; /* 任意のフォントを指定してください */
+    margin-top: 1rem;
 }
 
-p {
-    margin: 10px 0;
-}
-
-select, input, button {
-    margin-bottom: 10px;
-}
-
-form {
+.info {
+    color: rgb(187, 0, 0);
     text-align: center;
+    font-weight: 600;
+}
+
+.table {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.subtitle {
+    text-align: end;
+}
+
+.submit {
+    padding: 10px 20px;
+    background-color: rgba(209, 209, 209, 0.336);
+    border-radius: 25px;
+    border: 1px solid #4b4b4b;
+    width: fit-content;
+    margin: 4rem auto;
+    margin-bottom: 1rem;
+    transition: .2s all;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: rgba(209, 209, 209, 0.782);
+}
+
+#post {
+    width: 3rem;
+}
+
+#code {
+    width: 4rem;
+}
+
+.error {
+    text-align: center;
+    color: rgb(230, 0, 0);
+    font-size: smaller;
 }

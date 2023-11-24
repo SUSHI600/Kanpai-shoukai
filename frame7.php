@@ -61,13 +61,13 @@
             echo '<p class="row justify-content-center">購入が完了しました。</p>';
             echo '<p class="row justify-content-center">お買い上げありがとうございます。</p>';
             echo '<p class="row justify-content-center">またのお越しをお待ちしております。</p>';
-            echo '<a href="./frame16.php">';
+            echo '<a href="./toppage.php">';
             echo 'TOPページへ';
             echo '</a></div>';
         } else {
             echo '<div class="div7 container-fluid">';
             echo '<p class="row justify-content-center">エラーが発生しました。</p>';
-            echo '<a href="./frame16.php">';
+            echo '<a href="./toppage.php">';
             echo 'TOPページへ';
             echo '</a></div>';
         }
