@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<?php require 'header.php' ?>
+<?php require 'header.php'; ?>
 <h2>マイページ</h2>
 <?php
     echo '<h2>ユーザーネーム</h2>';
