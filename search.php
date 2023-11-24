@@ -30,11 +30,11 @@
                 break;
             case '酒':
                 $sql=$pdo->query('select * from items where name like "酒" 
-                or category_id = 0');
+                or category_id = 1');
                 break;
             case 'つまみ':
                 $sql=$pdo->query('select * from items where name like "つまみ" 
-                or category_id = 1');
+                or category_id = 2');
                 break;
             default:
             $sql=$pdo->prepare('select * from items where name like ?');
