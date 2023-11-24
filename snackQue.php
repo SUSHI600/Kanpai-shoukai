@@ -8,19 +8,19 @@
 <ul>
     <li>味</li>
     <input type="radio" class="btn-check" name="taste" id="sweet" autocomplete="off">
-<label class="btn btn-secondary" for="option1">甘い</label>
+<label class="btn btn-secondary" for="sweet">甘い</label>
     <input type="radio" class="btn-check" name="taste" id="spicy" autocomplete="off">
-<label class="btn btn-secondary" for="option1">辛い</label>
+<label class="btn btn-secondary" for="spicy">辛い</label>
     <input type="radio" class="btn-check" name="taste" id="bitter" autocomplete="off">
-<label class="btn btn-secondary" for="option1">苦い</label>
+<label class="btn btn-secondary" for="bitter">苦い</label>
     <li>地域</li>
     <input type="radio" class="btn-check" name="region" id="Asia" autocomplete="off">
-<label class="btn btn-secondary" for="option1">アジア</label>
+<label class="btn btn-secondary" for="Asia">アジア</label>
     <input type="radio" class="btn-check" name="region" id="America" autocomplete="off">
-<label class="btn btn-secondary" for="option1">アメリカ</label>
+<label class="btn btn-secondary" for="America">アメリカ</label>
     <input type="radio" class="btn-check" name="region" id="Europe" autocomplete="off">
-<label class="btn btn-secondary" for="option1">ヨーロッパ</label>
+<label class="btn btn-secondary" for="Europe">ヨーロッパ</label>
     <input type="radio" class="btn-check" name="region" id="Africa" autocomplete="off">
-<label class="btn btn-secondary" for="option1">アフリカ</label>
+<label class="btn btn-secondary" for="Africa">アフリカ</label>
 </ul>
 <span>完了</span>
