@@ -18,6 +18,6 @@
         echo '<input type="submit" value="更新">';
         echo '</form>';
     }else{
-        header('Location: login-input.php');
+        header('Location: "login-input.php"');
     }
 ?>
