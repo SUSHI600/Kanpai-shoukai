@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<?php include 'header.php'; ?>
-<?php include 'db-connect.php'; ?>
 <?php
+    include 'header.php';
+    include 'db-connect.php';
     if(isset($_SESSION['user'])){
         echo '<h2>マイページ</h2>';
         $pdo=new PDO($connect,USER,PASS);
