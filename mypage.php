@@ -7,7 +7,8 @@
         include 'db-connect.php';
         echo '<h2>マイページ</h2>';
         $pdo=new PDO($connect,USER,PASS);
-        $sql=$pdo->query('select * from user where id=8');
+        $sql=$pdo->prepare('select * from user where id=?');
+        $sql->execute([$_SESSION['user']['id']]);
         echo '<h2>ユーザーネーム</h2>';
         echo $sql['name'];
         echo '<h2>メールアドレス</h2>';
