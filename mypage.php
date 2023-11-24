@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
 <?php include 'header.php'; ?>
+<?php session_start(); ?>
 <?php include 'db-connect.php'; ?>
 <h2>マイページ</h2>
 <?php
