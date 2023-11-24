@@ -4,9 +4,11 @@
 <?php include 'header.php'; ?>
 <p>会員情報</p>
 <form action="mypage.php" method="post">
-    <p>ユーザーネーム:<input type="text" name="username" value=""></p>
-    <p>パスワード:<input type="password" name="password" value=""></p>
-    <p>メールアドレス:<input type="text" name="mailaddress" value=""></p>
+    <?php
+        echo '<p>ユーザーネーム:<input type="text" name="username" value="',$_SESSION['user']['name'],'"></p>';
+        echo '<p>パスワード:<input type="password" name="password" value="',$_SESSION['user']['password'],'"></p>';
+        echo '<p>メールアドレス:<input type="text" name="mailaddress" value="',$_SESSION['user']['e_mail'],'"></p>';
+    ?>
     <button type="submit">更新</button> 
 </form>
 <form action="rivalconfilm.php" method="post">
