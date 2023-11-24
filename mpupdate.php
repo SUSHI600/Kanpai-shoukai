@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+<?php session_start(); ?>
 <?php include 'header.php'; ?>
 <p>会員情報</p>
 <form action="mypage.php" method="post">
