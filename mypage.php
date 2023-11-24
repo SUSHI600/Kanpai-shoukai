@@ -5,7 +5,7 @@
 <?php include 'db-connect.php'; ?>
 <h2>マイページ</h2>
 <?php
-    if($_SESSION['customer']){
+    if($_SESSION['user']){
         $pdo=new PDO($connect,USER,PASS);
         $sql=$pdo->query('select * from user where id=8');
         echo '<h2>ユーザーネーム</h2>';
