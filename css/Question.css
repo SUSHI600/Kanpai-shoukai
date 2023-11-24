@@ -1,9 +1,14 @@
 h1{
     background-color: #d9d9d9;
     height: 55px;
+    margin-left: auto;
 }
 span{
     font-weight: bold;
+    font-size: large;
+    display: block;
+    width: fit-content;
+    margin-left: 5rem;
 }
 .radiobutton{
     display: none;
@@ -18,4 +23,13 @@ label{
 }
 .radiobutton:checked + label{
     background-color: skyblue;
+}
+
+.snackQue-label {
+    margin-bottom: 3%;
+}
+
+.snackQue-cnt {
+ justify-content: center;
+ display: flex;
 }
