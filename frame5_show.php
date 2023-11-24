@@ -1,12 +1,12 @@
 <?php
-$userID = 5;    // テスト用ID
+$userID = 11;    // テスト用ID
 
 try {
     $pdo = new PDO($connect, USER, PASS);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $pdo->beginTransaction();
 
-    $cartCountSql = $pdo->prepare("select count(id) from carts where user_id = ?");
+    $cartCountSql = $pdo->prepare("select * from carts where user_id = ?");
     $cartCountSql->execute([$userID]);
     $cartCount = $cartCountSql->fetchColumn();
 
@@ -28,7 +28,7 @@ try {
 
         $displaySql = $pdo->prepare("select items.id as id, items.name as name, items.category_id as category_id, items.price as price, carts.quantity as quantity from items join carts on items.id = carts.item_id where carts.user_id = ?");
         $displaySql->execute([$userID]);
-        $display = $displaySql->fetch(PDO::FETCH_ASSOC);    // 連想配列として取得
+        $display = $displaySql->fetchAll();    // 連想配列として取得
         $totalPrice = 0;
 
         foreach ($display as $displayCart) {
@@ -85,7 +85,7 @@ try {
         echo '</div>';
         echo '</div>';
 
-        echo '<div class="button_wrap>';
+        echo '<div class="button_wrap">';
         echo '<a href="#" class="button prev">戻る</a>';
         echo '<div class="button next" onclick="buy()">購入</div>';
         echo '</div>';
