@@ -4,14 +4,16 @@
 
 <?php
 unset($_SESSION['user']);
-$pdo=new PDO('mysql:host=mysql216.phy.lolipop.lan;dbname=LAA1516892-kaihatu;charset=utf8','LAA1516892','iu8yt5tghji9jhg');
-$sql=$pdo->prepare('select * from user where login=? and password=?');
-$sql->execute([$_REQUEST['login'], $_REQUEST['password']]);
-foreach ($sql as $row) {
+$pdo=new PDO($connect, USER, PASS);
+$sql=$pdo->prepare('select * from user where name=?');
+$sql->execute([$_POST['name']]);
+foreach($sql as $row){
+    if(password_verify($_POST['password'],$row['password']) == true){
     $_SESSION['user']=[
-        'id'=>$row['id'], 'name'=>$row['name'],
-        'address'=>$row['address'], 'login'=>$row['login'],
-        'password'=>$row['password']];
+        'id'=>$row['id'], 'name'=>$row['name'], 'birthday'=>$row['birthday'],
+        'e_mail'=>$row['e_mail'], 'password'=>$row['password'], 'postcode'=>$row['postcode'],
+        'address'=>$row['address']];
+    }
 }
 if (isset($_SESSION['user'])) {
     echo 'いらっしゃいませ、', $_SESSION['user']['name'],'さん。';
