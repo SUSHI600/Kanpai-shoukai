@@ -26,7 +26,7 @@ try {
         echo '</thead>';
         echo '<tbody>';
 
-        $displaySql = $pdo->prepare("select items.id as id, items.name as name, items.category_id as category_id, items.price as price, carts.quantity as quantity from items join carts on item.id = carts.item_id where carts.user_id = ?");
+        $displaySql = $pdo->prepare("select items.id as id, items.name as name, items.category_id as category_id, items.price as price, carts.quantity as quantity from items join carts on items.id = carts.item_id where carts.user_id = ?");
         $displaySql->execute([$userID]);
         $display = $displaySql->fetch(PDO::FETCH_ASSOC);    // 連想配列として取得
         $totalPrice = 0;
