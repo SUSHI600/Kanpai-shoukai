@@ -10,7 +10,7 @@
     <?php include './db-connect.php'; ?>
 
     <?php
-    $userId = 5;    // テスト用ID
+    $userId = 11;    // テスト用ID
     $itemId = $_GET['id'];
 
     try {
@@ -18,8 +18,10 @@
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $pdo->beginTransaction();
 
-        $deleteSql = $pdo->prepare('delete from cart where user_id = ? and item_id = ?');
+        $deleteSql = $pdo->prepare('delete from carts where user_id = ? and item_id = ?');
         $deleteSql->execute([$userId, $itemId]);
+
+        $pdo->commit();
     } catch (PDOException $e) {
         $pdo->rollBack();
         echo '<div class="container-fluid">';
