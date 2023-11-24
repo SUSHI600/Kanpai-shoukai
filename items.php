@@ -1,5 +1,5 @@
-<?php require 'header.php'; ?>
-<?php require 'db-connect.php'; ?>
+<?php include 'header.php'; ?>
+<?php include 'db-connect.php'; ?>
 <?php
     $pdo=new PDO($connect,USER,PASS);
     $sql=$pdo->prepare('select * from items where id=?');
@@ -21,4 +21,4 @@
         echo '</form>';
     }
 ?>
-<?php require 'footer.php'; ?>
+<?php include 'footer.php'; ?>
