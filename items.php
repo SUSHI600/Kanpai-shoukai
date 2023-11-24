@@ -8,13 +8,14 @@
     <div class="card">
     <div class="row g-0">
         <div class="col-5 col-sm-4">
-        <img src="assets/images/bs-images/img-3x4.png" class="img-fluid w-100" alt="card-horizontal-image">
+       <?php
+       foreach($sql as $row){
+       echo '<p><img alt="image" src="',$row['image'],'"></p>';
+       ?>
         </div>
         <div class="col-7 col-sm-8">
         <div class="card-body">
-            <?php
-        foreach($sql as $row){
-            echo '<p><img alt="image" src="',$row['image'],'"></p>';
+            <?php    
             echo '<form action="cart-insert.php" method="post">';
             echo '<h5 class="card-title">',$row['name'],'</h5>';
             echo '<p class="card-text">',$row['info'],'</p>';
