@@ -2,9 +2,9 @@
 <html lang="ja">
 <head>
 <?php
-    include 'header.php';
-    include 'db-connect.php';
     if(isset($_SESSION['user'])){
+        include 'header.php';
+        include 'db-connect.php';
         echo '<h2>マイページ</h2>';
         $pdo=new PDO($connect,USER,PASS);
         $sql=$pdo->query('select * from user where id=8');
