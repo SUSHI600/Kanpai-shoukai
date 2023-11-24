@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
 <?php
     if(isset($_SESSION['user'])){
         include 'header.php';
