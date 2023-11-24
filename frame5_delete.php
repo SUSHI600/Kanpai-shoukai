@@ -10,7 +10,7 @@
     <?php include './db-connect.php'; ?>
 
     <?php
-    $userId = 11;    // テスト用ID
+    $userId = $_SESSION['user']['id'];
     $itemId = $_GET['id'];
 
     try {

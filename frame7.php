@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -8,7 +10,7 @@
     <?php include './db-connect.php'; ?>
 
     <?php
-    $userId = 11;    // テスト用ID
+    $userId = $_SESSION['user']['id'];
     $today = date("Y-m-d"); //今日の日付
     $items = array();   // 商品ID
     $price = array();   // 商品単価

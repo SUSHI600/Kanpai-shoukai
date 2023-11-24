@@ -13,3 +13,7 @@ function buy() {
         location.href = "./frame7.php";
     }
 }
+
+function prev() {
+    window.history.back();
+}
