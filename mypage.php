@@ -14,6 +14,9 @@
         echo $sql['e_mail'];
         echo '<h2>生年月日</h2>';
         echo $sql['birthday'];
+        echo '<form action="mpupdate.php">';
+        echo '<input type="submit" value="更新">';
+        echo '</form>'
     }else{
         echo 'ログインしてください';
     }
