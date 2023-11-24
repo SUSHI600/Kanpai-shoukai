@@ -7,8 +7,7 @@
 <h2>マイページ</h2>
 <?php
     $pdo=new PDO($connect,USER,PASS);
-    $sql=$pdo->prepare('select * from user where id=?');
-    $sql->execute(8);
+    $sql=$pdo->query('select * from user where id=8');
     echo '<h2>ユーザーネーム</h2>';
     echo $sql['name'];
     echo '<h2>メールアドレス</h2>';
