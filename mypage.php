@@ -8,7 +8,7 @@
         echo '<h2>マイページ</h2>';
         $pdo=new PDO($connect,USER,PASS);
         $sql=$pdo->prepare('select * from user where id=?');
-        $sql->execute([$_SESSION['user']]);
+        $sql->execute([$_SESSION['user']['id']]);
         $row = $sql;
         echo '<h2>ユーザーネーム</h2>';
         echo $row['name'];
