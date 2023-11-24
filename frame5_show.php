@@ -6,12 +6,14 @@ try {
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $pdo->beginTransaction();
 
-    $cartCountSql = $pdo->prepare("select * from carts where user_id = ?");
+    $cartCountSql = $pdo->prepare("select count(id) as count from carts where user_id = ?");
     $cartCountSql->execute([$userID]);
-    $cartCount = $cartCountSql->fetchColumn();
+    $cartCount = $cartCountSql->fetch(PDO::FETCH_ASSOC);
 
-    if ($cartCount !== false) {
-        echo '<p class="count">現在カートに', $cartCount, '件の商品が入っています</p>';
+    if ($cartCount['count'] == 0) {
+        echo '<p class="count">現在カートに商品は入っていません</p>';
+    } else {
+        echo '<p class="count">現在カートに', $cartCount['count'], '件の商品が入っています</p>';
         echo '<div class="div">';
         echo '<table class="table table-bordered">';
         echo '<thead class="table-light">';
@@ -89,8 +91,6 @@ try {
         echo '<a href="#" class="button prev">戻る</a>';
         echo '<div class="button next" onclick="buy()">購入</div>';
         echo '</div>';
-    } else {
-        echo '<p class="count">現在カートに商品は入っていません</p>';
     }
 
     $pdo->commit();
