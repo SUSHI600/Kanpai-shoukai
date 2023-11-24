@@ -1,6 +1,8 @@
 <?php session_start(); ?>
 <?php
     if(isset($_SESSION['user'])){
+        echo '<!DOCTYPE html>';
+        echo '<html lang="ja">';
         include 'header.php';
         include 'db-connect.php';
         echo '<h2>マイページ</h2>';
