@@ -9,12 +9,13 @@
         $pdo=new PDO($connect,USER,PASS);
         $sql=$pdo->prepare('select * from user where id=?');
         $sql->execute([$_SESSION['user']]);
+        $row = $sql;
         echo '<h2>ユーザーネーム</h2>';
-        echo $sql['name'];
+        echo $row['name'];
         echo '<h2>メールアドレス</h2>';
-        echo $sql['e_mail'];
+        echo $row['e_mail'];
         echo '<h2>生年月日</h2>';
-        echo $sql['birthday'];
+        echo $row['birthday'];
         echo '<form action="mpupdate.php">';
         echo '<input type="submit" value="更新">';
         echo '</form>';
