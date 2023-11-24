@@ -9,16 +9,17 @@
         $pdo=new PDO($connect,USER,PASS);
         $sql=$pdo->prepare('select * from user where id=?');
         $sql->execute([$_SESSION['user']['id']]);
-        $row = $sql;
-        echo '<h2>ユーザーネーム</h2>';
-        echo $row['name'];
-        echo '<h2>メールアドレス</h2>';
-        echo $row['e_mail'];
-        echo '<h2>生年月日</h2>';
-        echo $row['birthday'];
-        echo '<form action="mpupdate.php">';
-        echo '<input type="submit" value="更新">';
-        echo '</form>';
+        foreach($sql as $row){
+            echo '<h2>ユーザーネーム</h2>';
+            echo $row['name'];
+            echo '<h2>メールアドレス</h2>';
+            echo $row['e_mail'];
+            echo '<h2>生年月日</h2>';
+            echo $row['birthday'];
+            echo '<form action="mpupdate.php">';
+            echo '<input type="submit" value="更新">';
+            echo '</form>';
+        }
     }else{
         header('Location: ./login-input.php');
         exit();
