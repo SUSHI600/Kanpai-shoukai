@@ -1,5 +1,5 @@
 <?php
-$userID = 11;    // テスト用ID
+$userID = $_SESSION['user']['id'];
 
 try {
     $pdo = new PDO($connect, USER, PASS);
@@ -88,7 +88,7 @@ try {
         echo '</div>';
 
         echo '<div class="button_wrap">';
-        echo '<a href="#" class="button prev">戻る</a>';
+        echo '<div class="button prev" onclick="prev()">戻る</div>';
         echo '<div class="button next" onclick="buy()">購入</div>';
         echo '</div>';
     }
