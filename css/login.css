@@ -7,12 +7,6 @@
     margin-top: 1rem;
 }
 
-.info {
-    color: rgb(187, 0, 0);
-    text-align: center;
-    font-weight: 600;
-}
-
 .table {
     max-width: 400px;
     margin: 0 auto;
@@ -28,7 +22,7 @@
     border-radius: 25px;
     border: 1px solid #4b4b4b;
     width: fit-content;
-    margin: 4rem auto;
+    margin: 2rem auto;
     margin-bottom: 1rem;
     transition: .2s all;
     cursor: pointer;
@@ -36,14 +30,6 @@
 
 .submit:hover {
     background-color: rgba(209, 209, 209, 0.782);
-}
-
-#post {
-    width: 3rem;
-}
-
-#code {
-    width: 4rem;
 }
 
 .error {
@@ -57,7 +43,16 @@
     top: auto;
     width: fit-content;
     right: 0;
-    left: 16rem;
+    left: 15rem;
     margin: .4em auto;
     cursor: pointer;
+}
+
+.info {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.info a {
+    text-underline-offset: 2px;
 }
