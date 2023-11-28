@@ -6,7 +6,7 @@
     <p>おすすめ</p>
     
     <button onclick="location.href='recombeer.php'" value="ビール">ビール</button>
-    <button onclick="location.href='recomwine.php'" value="ワイン">ワイン</button>
+    <button onclick="location.href='recomwine.php'" value="ワイン" style="background:grey">ワイン</button>
     <button onclick="location.href='recomliquor.php'" value="リキュール">リキュール<br></button>
     <?php include './db-connect.php' ?>
     <?php
