@@ -87,9 +87,9 @@
     position: relative;left: 100px;">おつまみ</span>
 <span button="" type="submit" style="
     position: relative;left: 200px;">晩酌セット</span>
-<img src="img/osake.jpg" alt="beer" width="300" height="150">
-<img src="img/osake.jpg" alt="beer" width="300" height="150">
-<img src="img/osake.jpg" alt="beer" width="300" height="150">
+<img src="img/osake.jpg" alt="osake" width="300" height="150">
+<img src="img/otumami.jpg" alt="otumami" width="300" height="150">
+<img src="img/banshaku.jpg" alt="banshaku" width="300" height="150">
 <!-- 追加の画像があればここに追加 -->
 
 </body>
