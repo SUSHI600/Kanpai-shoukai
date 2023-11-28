@@ -14,10 +14,10 @@
     echo '<form action="Frame22output.php" method="post" name="form22">';
     echo '<table class="table">';
     echo '<tr><td class="subtitle">ユーザーネーム：</td><td>';
-    echo '<input type="text" class="input" name="name" value="', $name, '">';
+    echo '<input type="text" class="input" name="name" id="name" placeholder="10文字以内" value="', $name, '">';
     echo '</td></tr>';
     echo '<tr><td class="subtitle">パスワード：</td><td>';
-    echo '<input type="password" class="input" name="password" id="word" value="', $password, '">';
+    echo '<input type="password" class="input" name="password" id="word" placeholder="半角英数字のみ" value="', $password, '">';
     echo '</td></tr>';
     echo '<tr><td class="subtitle">パスワード確認：</td><td>';
     echo '<input type="password" class="input" name="password1" id="password" value="', $password1, '">';
@@ -56,7 +56,8 @@
     echo '<input type="text" class="input" name="address" value="', $address, '">';
     echo '</td></tr>';
     echo '</table>';
-    echo '<p id="passError" class="error"></p>';
+    echo '<p id="passError1" class="error"></p>';
+    echo '<p id="passError2" class="error"></p>';
     echo '<p id="mailError" class="error"></p>';
     echo '<p id="postError" class="error"></p>';
     echo '<div class="submit" onclick="send()">登録</div>';
