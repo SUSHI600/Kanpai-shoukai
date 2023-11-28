@@ -33,3 +33,12 @@ label{
  justify-content: center;
  display: flex;
 }
+
+.alcoholQue-label {
+    margin-bottom: 3%;
+}
+
+.alcoholQue-cnt {
+    justify-content: center;
+    display: flex;
+   }
