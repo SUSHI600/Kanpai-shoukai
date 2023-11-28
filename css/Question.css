@@ -33,3 +33,12 @@ label{
  justify-content: center;
  display: flex;
 }
+
+.alcohol-label {
+    margin-bottom: 3%;
+}
+
+.alcohol-cnt {
+    justify-content: center;
+    display: flex;
+   }
