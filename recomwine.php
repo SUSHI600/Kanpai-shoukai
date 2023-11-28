@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+<link rel="stylesheet" href="css/recommend.css">
 <?php include './header.php' ?>
     <p>おすすめ</p>
     
@@ -16,4 +17,3 @@
             echo '<a href="items.php?id=',$id,'">',"<img class='liquorlist' src=",$row['image'],">",'</a>';
         }
     ?>
-    <script src="recommend.js"></script>
