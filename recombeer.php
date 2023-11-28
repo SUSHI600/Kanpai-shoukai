@@ -4,9 +4,9 @@
 <?php include './header.php' ?>
     <p>おすすめ</p>
     
-    <span onclick="alcohol()" value="ビール">ビール</span>
-    <span onclick="appetizers()" value="ワイン">ワイン</span>
-    <span onclick="alcoholset()" value="リキュール">リキュール<br></span>
+    <span onclick="location.href='recombeer.php'" value="ビール">ビール</span>
+    <span onclick="location.href='recomwine.php'" value="ワイン">ワイン</span>
+    <span onclick="location.href='recomliquor.php'" value="リキュール">リキュール<br></span>
     <?php include './db-connect.php' ?>
     <?php
         $pdo=new PDO($connect,USER,PASS);
