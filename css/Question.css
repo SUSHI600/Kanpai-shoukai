@@ -34,11 +34,11 @@ label{
  display: flex;
 }
 
-.alcohol-label {
+.alcoholQue-label {
     margin-bottom: 3%;
 }
 
-.alcohol-cnt {
+.alcoholQue-cnt {
     justify-content: center;
     display: flex;
    }
