@@ -76,7 +76,8 @@
     }
 
     img {
-      margin-right: 100px; /* 画像間の間隔を設定 */
+      margin-right: 100px;/* 画像間の間隔を設定 */
+      border-radius: 10px; 
     }
   </style>
 </head>
