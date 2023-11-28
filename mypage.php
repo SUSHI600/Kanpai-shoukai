@@ -9,6 +9,7 @@
         echo '<h2>マイページ</h2>';
         $pdo=new PDO($connect,USER,PASS);
         $sql=$pdo->prepare('select * from user where id=?');
+        echo '<div class=mypage>'
         $sql->execute([$_SESSION['user']['id']]);
         foreach($sql as $row){
             echo '<h6>ユーザーネーム</h6>';
@@ -25,4 +26,5 @@
         header('Location: ./login-input.php');
         exit();
     }
+    echo '</div>'
 ?>
