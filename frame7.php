@@ -30,7 +30,7 @@
             $total = 0;
             $itemSql = $pdo->prepare("select * from items where id = ?");
 
-            foreach ($cartSql as $cartRow) {
+            foreach ($cart as $cartRow) {
                 $item = $cartRow['item_id'];
                 $itemSql->execute([$item]);
                 $itemRow = $itemSql->fetch(PDO::FETCH_ASSOC);   // 連想配列として取得
