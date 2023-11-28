@@ -3,3 +3,7 @@
     height: 250px;
     object-fit: contain;
 }
+button{
+    border: none;
+    background: transparent;
+}
