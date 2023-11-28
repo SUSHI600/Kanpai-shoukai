@@ -51,3 +51,13 @@
     color: rgb(230, 0, 0);
     font-size: smaller;
 }
+
+#buttonEye {
+    position: absolute;
+    top: auto;
+    width: fit-content;
+    right: 0;
+    left: 16rem;
+    margin: .4em auto;
+    cursor: pointer;
+}

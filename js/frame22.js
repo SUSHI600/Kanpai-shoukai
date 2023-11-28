@@ -57,12 +57,10 @@ code.addEventListener('blur', function () {
     }
 });
 
-var pass = document.getElementById("password");
-var passError1 = document.getElementById("passError1");
-var passError2 = document.getElementById("passError2");
-var word = document.getElementById("word");
+var pass = document.getElementById("word");
+var passError1 = document.getElementById("passError");
 
-word.addEventListener('blur', function () {
+pass.addEventListener('blur', function () {
     var password = this.value;
     var regex = /^[0-9a-zA-Z]*$/;
 
@@ -73,25 +71,27 @@ word.addEventListener('blur', function () {
     }
 });
 
-pass.addEventListener('blur', function () {
-    if (this.value === word.value || this.value.length == 0) {
-        passError2.innerText = "";
-    } else {
-        passError2.innerText = "パスワードが一致しません。";
-    }
-});
+var mail1 = document.getElementById("mail");
+var mailError1 = document.getElementById("mailError1");
+var mail2 = document.getElementById("e-mail");
+var mailError2 = document.getElementById("mailError2");
 
-var mail = document.getElementById("mail");
-var mailError = document.getElementById("mailError");
-
-mail.addEventListener('blur', function () {
+mail1.addEventListener('blur', function () {
     var email = mail.value;
     var regex = /^[a-zA-Z0-9_+-]+(\.[a-zA-Z0-9_+-]+)*@([a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]*\.)+[a-zA-Z]{2,}$/;
 
     if (regex.test(email) || this.value.length == 0) {
-        mailError.innerText = "";
+        mailError1.innerText = "";
     } else {
-        mailError.innerText = "無効なメールアドレスです。";
+        mailError1.innerText = "無効なメールアドレスです。";
+    }
+});
+
+mail2.addEventListener('blur', function () {
+    if (this.value === mail1.value || this.value.length == 0) {
+        mailError2.innerText = "";
+    } else {
+        mailError2.innerText = "メールアドレスが一致しません。";
     }
 });
 
@@ -124,5 +124,18 @@ function send() {
 
     if (flg) {
         document.form22.submit();
+    }
+}
+
+function HidePass() {
+    var pass = document.getElementById("word");
+    var eye = document.getElementById("buttonEye");
+
+    if (pass.type === "text") {
+        pass.type = "password";
+        eye.className = "far fa-eye";
+    } else {
+        pass.type = "text";
+        eye.className = "far fa-eye-slash";
     }
 }
