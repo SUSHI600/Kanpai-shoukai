@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <link rel="stylesheet" href="recommend.css">
+    <link rel="stylesheet" href="css/recommend.css">
 <?php include './header.php' ?>
     <p>おすすめ</p>
     
