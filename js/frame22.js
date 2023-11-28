@@ -1,3 +1,15 @@
+var userName = document.getElementById("name");
+
+userName.addEventListener('input', function () {
+    var input = this.value;
+
+    if (input.length > 10) {
+        input = input.slice(0, 10);
+    }
+
+    this.value = input;
+});
+
 var postError = document.getElementById("postError");
 var post = document.getElementById("post");
 
@@ -6,10 +18,6 @@ post.addEventListener('input', function () {
 
     if (inputValue.length > 3) {
         inputValue = inputValue.slice(0, 3);
-    } else if (inputValue.length < 3) {
-        postError.innerText = "郵便番号が不正です";
-    } else {
-        postError.innerText = "";
     }
 
     this.value = inputValue;
@@ -22,31 +30,61 @@ code.addEventListener('input', function () {
 
     if (inputValue.length > 4) {
         inputValue = inputValue.slice(0, 4);
-    } else if (inputValue.length < 4) {
-        postError.innerText = "郵便番号が不正です";
-    } else {
-        postError.innerText = "";
     }
 
     this.value = inputValue;
 });
 
+post.addEventListener('blur', function () {
+    var inputPost = post.value;
+    var inputCode = code.value;
+
+    if (inputPost.length + inputCode.length == 7 || inputPost.length + inputCode.length == 0) {
+        postError.innerText = "";
+    } else {
+        postError.innerText = "郵便番号が不正です。";
+    }
+});
+
+code.addEventListener('blur', function () {
+    var inputPost = post.value;
+    var inputCode = code.value;
+
+    if (inputPost.length + inputCode.length == 7 || inputPost.length + inputCode.length == 0) {
+        postError.innerText = "";
+    } else {
+        postError.innerText = "郵便番号が不正です。";
+    }
+});
+
 var pass = document.getElementById("password");
-var passError = document.getElementById("passError");
+var passError1 = document.getElementById("passError1");
+var passError2 = document.getElementById("passError2");
 var word = document.getElementById("word");
 
-pass.addEventListener('input', function () {
-    if (this.value === word.value || this.value.length == 0) {
-        passError.innerText = "";
+word.addEventListener('blur', function () {
+    var password = this.value;
+    var regex = /^[0-9a-zA-Z]*$/;
+
+    if (regex.test(password) || this.length == 0) {
+        passError1.innerText = "";
     } else {
-        passError.innerText = "パスワードが一致しません。";
+        passError1.innerText = "不正なパスワードです。";
+    }
+});
+
+pass.addEventListener('blur', function () {
+    if (this.value === word.value || this.value.length == 0) {
+        passError2.innerText = "";
+    } else {
+        passError2.innerText = "パスワードが一致しません。";
     }
 });
 
 var mail = document.getElementById("mail");
 var mailError = document.getElementById("mailError");
 
-mail.addEventListener('input', function () {
+mail.addEventListener('blur', function () {
     var email = mail.value;
     var regex = /^[a-zA-Z0-9_+-]+(\.[a-zA-Z0-9_+-]+)*@([a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]*\.)+[a-zA-Z]{2,}$/;
 
@@ -59,19 +97,29 @@ mail.addEventListener('input', function () {
 
 function send() {
     var input = document.getElementsByClassName("input");
-    var bool = false;
+    var error = document.getElementsByClassName("error");
+    var errorFlg = false;
+    var inputFlg = false;
     var flg = false;
 
     for (i = 0; i < input.length; i++) {
         if (input[i].value.length == 0) {
-            bool = true;
+            inputFlg = true;
         }
     }
 
-    if (!bool) {
-        flg = confirm("現在の内容で登録します。\nよろしいですか？");
-    } else {
+    for (i = 0; i < error.length; i++) {
+        if (error[i].innerText.length != 0) {
+            errorFlg = true;
+        }
+    }
+
+    if (inputFlg) {
         alert("未入力の項目があります");
+    } else if (errorFlg) {
+        alert("不正な項目があります");
+    } else {
+        flg = confirm("現在の内容で登録します。\nよろしいですか？");
     }
 
     if (flg) {
