@@ -32,6 +32,7 @@ try {
         $displaySql->execute([$userID]);
         $display = $displaySql->fetchAll();    // 連想配列として取得
         $totalPrice = 0;
+        $liquorFlg = false;
 
         foreach ($display as $displayCart) {
             $category = "";
@@ -40,6 +41,7 @@ try {
 
             if ($displayCart['category_id'] == 1) {
                 $category = "お酒";
+                $liquorFlg = true;
             } else {
                 $category = "おつまみ";
             }
@@ -62,6 +64,10 @@ try {
         $addressSql = $pdo->prepare('select * from user where id = ?');
         $addressSql->execute([$userID]);
         $address = $addressSql->fetch(PDO::FETCH_ASSOC);
+        $today = date("Y-m-d");
+        $birthday = $address['birthday'];
+        $diff = date_diff(date_create($birthday), date_create($today));
+        $age = $diff->format('%y');
 
         echo '<div class="container-fluid div">';
         echo '<div class="info_wrap">';
@@ -89,7 +95,11 @@ try {
 
         echo '<div class="button_wrap">';
         echo '<div class="button prev" onclick="prev()">戻る</div>';
-        echo '<div class="button next" onclick="buy()">購入</div>';
+        if ($liquorFlg) {
+            echo '<div class="button next" onclick="liquorBuy(', $age, ')">購入</div>';
+        } else {
+            echo '<div class="button next" onclick="buy()">購入</div>';
+        }
         echo '</div>';
     }
 

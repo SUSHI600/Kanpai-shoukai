@@ -6,6 +6,20 @@ function delCart(el) {
     }
 }
 
+function liquorBuy(age) {
+    var flg = false;
+
+    if (age >= 20) {
+        flg = confirm("現在の内容で購入します。\nよろしいですか？");
+    } else {
+        alert("20歳未満はお酒の購入ができません");
+    }
+
+    if (flg) {
+        location.href = "./frame7.php";
+    }
+}
+
 function buy() {
     var flg = confirm("現在の内容で購入します。\nよろしいですか？");
 

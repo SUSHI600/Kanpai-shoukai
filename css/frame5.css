@@ -120,6 +120,7 @@
 .prev {
     position: relative;
     margin-right: 6rem;
+    cursor: pointer;
 }
 
 .next {
