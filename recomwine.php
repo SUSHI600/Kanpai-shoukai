@@ -2,7 +2,7 @@
 <html1 long="ja">
     <head>
     <meta charset="UTF-8">
-    <script src="osusume2.js"></script>
+    <script src="recommend.js"></script>
 </head>
 <body>
 <?php require 'header.php' ?>

@@ -3,7 +3,7 @@
     <head>
     <link rel="stylesheet" type="text/css" href="osusume1.css"> <!-- 外部CSSファイルをリンクする -->
     <meta charset="UTF-8">
-    <script src="osusume1.js"></script>
+    <script src="recommend.js"></script>
 </head>
 <body>
 <?php require 'header.php' ?>
