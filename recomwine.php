@@ -5,9 +5,9 @@
 <?php include './header.php' ?>
     <p>おすすめ</p>
     
-    <span onclick="location.href='recombeer.php'" value="ビール">ビール</span>
-    <span onclick="location.href='recomwine.php'" value="ワイン">ワイン</span>
-    <span onclick="location.href='recomliquor.php'" value="リキュール">リキュール<br></span>
+    <button onclick="location.href='recombeer.php'" value="ビール">ビール</button>
+    <button onclick="location.href='recomwine.php'" value="ワイン" style="">ワイン</button>
+    <button onclick="location.href='recomliquor.php'" value="リキュール">リキュール<br></button>
     <?php include './db-connect.php' ?>
     <?php
         $pdo=new PDO($connect,USER,PASS);
