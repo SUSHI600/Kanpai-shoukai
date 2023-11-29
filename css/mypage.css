@@ -1,11 +1,56 @@
-h2 {
-    text-align: center;
+@charset "utf-8";
+
+.button_wrap {
+    display: flex;
+    margin-top: 4rem;
 }
 
-h3 {
-    text-align: center;
+.button {
+    text-decoration: none;
+    color: #000;
+    padding: 5px 20px;
+    background-color: rgba(209, 209, 209, 0.336);
+    border-radius: 25px;
+    border: 1px solid #4b4b4b;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 1rem;
+    transition: .2s all;
 }
 
-h6 {
+.prev {
+    position: relative;
+    margin-right: 4rem;
+    cursor: pointer;
+}
+
+.next {
+    position: relative;
+    margin-left: 4rem;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgba(209, 209, 209, 0.782);
+    color: #000;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 600;
     text-align: center;
+    margin-top: 1rem;
+}
+
+.subtitle {
+    text-align: end;
+}
+
+.table {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#address {
+    margin-top: 1rem;
 }
