@@ -11,6 +11,7 @@
     <?php include './db-connect.php'; ?>
 
     <?php
+    unset($_SESSION['user']);
     try {
         $pdo = new PDO($connect, USER, PASS);
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -23,10 +24,8 @@
         $postcode = $_POST['post'] . '-' . $_POST['code'];
         $address = $_POST['address'];
 
-        $sql = $pdo->prepare("insert into user values(null, ?, ?, ?, ?, ?, ?)");
-        $sql->execute([$name, $birthday, $mail, $pass, $postcode, $address]);
-
-        $pdo->commit();
+        $insertSql = $pdo->prepare("insert into user values(null, ?, ?, ?, ?, ?, ?)");
+        $insertSql->execute([$name, $birthday, $mail, $pass, $postcode, $address]);
 
         echo '<div class="div7 container-fluid">';
         echo '<p class="row justify-content-center">お客様情報を登録しました。</p>';
@@ -34,11 +33,20 @@
         echo 'TOPページへ';
         echo '</a></div>';
 
-        $_SESSION['user'] = [
-            'id' => $pdo->lastInsertId(), 'name' => $name, 'birthday' => $birthday,
-            'e_mail' => $mail, 'password' => $pass, 'postcode' => $postcode,
-            'address' => $address
-        ];
+        $userId = $pdo->lastInsertId();
+
+        $selectSql = $pdo->prepare("select * from user where id = ?");
+        $selectSql->execute([$userId]);
+
+        foreach ($selectSql as $row) {
+            $_SESSION['user'] = [
+                'id' => $row['id'], 'name' => $row['name'], 'birthday' => $row['birthday'],
+                'e_mail' => $row['e_mail'], 'password' => $row['password'], 'postcode' => $row['postcode'],
+                'address' => $row['address']
+            ];
+        }
+
+        $pdo->commit();
     } catch (PDOException $e) {
         $pdo->rollBack();
         echo '<div class="container-fluid">';
