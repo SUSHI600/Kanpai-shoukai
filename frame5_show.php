@@ -1,5 +1,10 @@
 <?php
-$userID = $_SESSION['user']['id'];
+if(isset($_SESSION['user'])){
+    $userID = $_SESSION['user']['id'];
+}else{
+    header('Location: ' . './login-input.php', true, 301);
+    exit();
+}
 
 try {
     $pdo = new PDO($connect, USER, PASS);
