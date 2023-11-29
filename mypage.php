@@ -6,6 +6,14 @@
         echo '<html lang="ja">';
         include 'header.php';
         include 'db-connect.php';
+        if(isset($_POST['name'])&&isset($_POST['e_mail'])&&isset($_POST['birthday'])){
+            $sql=$pdo->prepare('update user set 
+            name="',$_POST['name'],'",
+            e_mail="',$_POST['e_mail'],'",
+            birthday="',$_POST['birthday'],'"
+            where id=?');
+            $sql->execute([$_SESSION['user']['id']]);
+        }
         echo '<h2>マイページ</h2>';
         $pdo=new PDO($connect,USER,PASS);
         $sql=$pdo->prepare('select * from user where id=?');
