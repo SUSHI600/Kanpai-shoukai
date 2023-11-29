@@ -5,6 +5,7 @@
         crossorigin="anonymous"/>
 <script src="js/question.js"></script>
 <h1>アンケート</h1>
+<h3>お酒の好みを選択してください</h3>
 <span onclick="alcoholskip()">スキップ</span>
 <div class="alcoholQue-cnt">
 <ul>
@@ -33,4 +34,4 @@
 <label class="btn btn-secondary alcoholQue-label" for="Africa">アフリカ</label>
 </ul>
 </div>
-<span>次へ</span>
+<span onclick="alcoholskip()">次へ</span>

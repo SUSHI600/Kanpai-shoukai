@@ -4,7 +4,8 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
         crossorigin="anonymous"/>
 <h1>アンケート</h1>
-<span onclick="snackskip()">スキップ</span>
+<h3>おつまみの好みを選択してください</h3>
+<span onclick="location.href='Frame22input.php'">スキップ</span>
 <div class="snackQue-cnt">
 <ul>
     <li>味</li>
@@ -25,4 +26,4 @@
 <label class="btn btn-secondary snackQue-label" for="Africa">アフリカ</label>
 </ul>
 </div>
-<span>完了</span>
+<span onclick="location.href='Frame22input.php'">完了</span>
