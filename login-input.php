@@ -26,7 +26,7 @@
     ?>
     <p class="info">
         アカウントがない方は
-        <a href="./Frame22input.php">こちら</a>
+        <a href="./alcoholQue.php">こちら</a>
     </p>
 
     <script src="./js/login.js"></script>
