@@ -7,7 +7,7 @@
     
     <button onclick="location.href='recombeer.php'" value="ビール">ビール</button>
     <button onclick="location.href='recomwine.php'" value="ワイン">ワイン</button>
-    <button onclick="location.href='recomliquor.php'" value="リキュール" style="background:whitegrey">リキュール<br></button>
+    <button onclick="location.href='recomliquor.php'" value="リキュール" style="background-color:whitegrey">リキュール<br></button>
     <?php include './db-connect.php' ?>
     <?php
         $pdo=new PDO($connect,USER,PASS);
