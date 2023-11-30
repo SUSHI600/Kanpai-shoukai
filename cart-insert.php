@@ -1,7 +1,7 @@
 <?php require 'header.php'; ?>
 <?php require 'db-connect.php'; ?>
 <?php
-    if(isset($_SESSION['user'])){
+    if(!empty($_SESSION['user'])){
         $pdo=new PDO($connect,USER,PASS);
         $sql=$pdo->query('select curdate()');
         $add_date = $sql;
