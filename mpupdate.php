@@ -8,7 +8,7 @@
     <?php include 'header.php'; ?>
     <?php include 'db-connect.php'; ?>
 
-    <p class="title">ユーザー情報更新</p>
+    <p class="title">プロフィール更新</p>
     <?php
     $pdo = new PDO($connect, USER, PASS);
     $sql = $pdo->prepare('select * from user where id = ?');
