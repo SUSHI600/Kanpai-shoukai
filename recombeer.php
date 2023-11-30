@@ -12,13 +12,13 @@
             font-size: 30px; 
         }
         button {
-            font-size: 50px; 
+            font-size: 35px; 
         }
     </style>
         <div class="wine"style="text-align: center;">
-        <button onclick="location.href='recombeer.php'" value="ビール" style="background-color:#d3d3d3;margin-right: 80px;">ビール</button>
+        <button onclick="location.href='recombeer.php'" value="ビール" style="background-color:#d3d3d3;margin-right: 200px;">ビール</button>
     <button onclick="location.href='recomwine.php'" value="ワイン">ワイン</button>
-    <button onclick="location.href='recomliquor.php'" value="リキュール" style="margin-left: 80px;">リキュール<br></button>
+    <button onclick="location.href='recomliquor.php'" value="リキュール" style="margin-left: 200px;">リキュール<br></button>
     <?php include './db-connect.php' ?>
     </div>
     <?php
