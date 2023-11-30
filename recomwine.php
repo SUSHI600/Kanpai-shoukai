@@ -11,15 +11,15 @@
             font-size: 30px; 
         }
         button {
-            font-size: 50px; 
+            font-size: 35px; 
         }
     </style>
     <p>おすすめ</p>
     
     <div class="wine"style="text-align: center;">
-    <button class="beer" onclick="location.href='recombeer.php'" value="ビール" style="margin-right: 80px;">ビール</button>
+    <button class="beer" onclick="location.href='recombeer.php'" value="ビール" style="margin-right: 200px;">ビール</button>
     <button class="wine" onclick="location.href='recomwine.php'" value="ワイン" style="background-color:#d3d3d3;">ワイン</button>
-    <button class="recomliquor" onclick="location.href='recomliquor.php'" value="リキュール" style="margin-left: 80px;">リキュール<br></button>
+    <button class="recomliquor" onclick="location.href='recomliquor.php'" value="リキュール" style="margin-left: 200px;">リキュール<br></button>
     </div>
     <?php include './db-connect.php' ?>
     <?php
