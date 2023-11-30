@@ -1,3 +1,4 @@
+<?php require 'header2.php' ;?>
 <link rel="stylesheet" href="css/Question.css?v=1.0.0">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
         rel="stylesheet"
@@ -6,6 +7,7 @@
 <h1>アンケート</h1>
 <h3>おつまみの好みを選択してください</h3>
 <span onclick="location.href='Frame22input.php'">スキップ</span>
+<form  name="dbQue" action="Que2.php" method="post">
 <div class="snackQue-cnt">
 <ul>
     <li>味</li>
@@ -26,4 +28,7 @@
 <label class="btn btn-secondary snackQue-label" for="Africa">アフリカ</label>
 </ul>
 </div>
-<span onclick="location.href='Frame22input.php'">完了</span>
+<span onclick="sendpost()">完了</span>
+</form>
+<script src="./js/snackQue.js"></script>
+<?php include 'footer.php'; ?>

@@ -1,3 +1,4 @@
+<?php require 'header2.php' ;?>
 <link rel="stylesheet" href="css/Question.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
         rel="stylesheet"
@@ -7,6 +8,7 @@
 <h1>アンケート</h1>
 <h3>お酒の好みを選択してください</h3>
 <span onclick="alcoholskip()">スキップ</span>
+<form  name="dbQue" action="Que1.php" method="post">
 <div class="alcoholQue-cnt">
 <ul>
     <li>味</li>
@@ -35,3 +37,5 @@
 </ul>
 </div>
 <span onclick="alcoholskip()">次へ</span>
+</form>
+<?php include 'footer.php'; ?>

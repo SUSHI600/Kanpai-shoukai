@@ -1,8 +1,24 @@
 @charset "utf-8";
 
+.title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.table {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.subtitle {
+    text-align: end;
+}
+
 .button_wrap {
+    margin-top: 2rem;
     display: flex;
-    margin-top: 4rem;
 }
 
 .button {
@@ -35,35 +51,27 @@
     color: #000;
 }
 
-.title {
-    font-size: 1.5rem;
-    font-weight: 600;
+.error {
     text-align: center;
-    margin-top: 1rem;
+    color: rgb(230, 0, 0);
+    font-size: smaller;
 }
 
-.subtitle {
-    text-align: end;
-}
-
-.table {
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-.submit {
-    padding: 5px 20px;
+.far {
+    position: absolute;
+    top: auto;
     width: fit-content;
-    margin: 0 auto;
-    position: relative;
-    margin-left: 0;
+    right: 0;
+    left: 22rem;
+    margin: .4em auto;
     cursor: pointer;
-    color: gray;
-    text-decoration: underline;
-    text-underline-offset: 2px;
 }
 
-.submit_wrap {
-    max-width: 400px;
-    margin: 0 auto;
+.info {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.info a {
+    text-underline-offset: 2px;
 }
