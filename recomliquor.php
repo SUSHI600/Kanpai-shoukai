@@ -3,12 +3,23 @@
 <head>
 <link rel="stylesheet" href="css/recommend.css">
 <?php include './header.php' ?>
+<style>
+        body {
+            font-size: 16px; 
+        }
+        p {
+            font-size: 30px; 
+        }
+        button {
+            font-size: 50px; 
+        }
+    </style>
     <p>おすすめ</p>
-    
-    <button onclick="location.href='recombeer.php'" value="ビール">ビール</button>
+    <div class="wine"style="text-align: center;">
+    <button onclick="location.href='recombeer.php'" value="ビール" style="margin-right: 80px;">ビール</button>
     <button onclick="location.href='recomwine.php'" value="ワイン">ワイン</button>
-    <button onclick="location.href='recomliquor.php'" value="リキュール" style="background-color: #d3d3d3;">リキュール<br></button>
-
+    <button onclick="location.href='recomliquor.php'" value="リキュール" style="background-color: #d3d3d3;margin-left: 80px;">リキュール<br></button>
+</div>
     <?php include './db-connect.php' ?>
     <?php
         $pdo=new PDO($connect,USER,PASS);

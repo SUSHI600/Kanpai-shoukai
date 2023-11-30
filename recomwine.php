@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<link rel="stylesheet" href="css/recommend.css">
-<?php include './header.php' ?>
+    <link rel="stylesheet" href="css/recommend.css">
+    <?php include './header.php' ?>
+    <style>
+        body {
+            font-size: 16px; 
+        }
+        p {
+            font-size: 30px; 
+        }
+        button {
+            font-size: 50px; 
+        }
+    </style>
     <p>おすすめ</p>
     
-    <button onclick="location.href='recombeer.php'" value="ビール">ビール</button>
-    <button onclick="location.href='recomwine.php'" value="ワイン" style="background-color:#d3d3d3;">ワイン</button>
-    <button onclick="location.href='recomliquor.php'" value="リキュール">リキュール<br></button>
+    <div class="wine"style="text-align: center;">
+    <button class="beer" onclick="location.href='recombeer.php'" value="ビール" style="margin-right: 80px;">ビール</button>
+    <button class="wine" onclick="location.href='recomwine.php'" value="ワイン" style="background-color:#d3d3d3;">ワイン</button>
+    <button class="recomliquor" onclick="location.href='recomliquor.php'" value="リキュール" style="margin-left: 80px;">リキュール<br></button>
+    </div>
     <?php include './db-connect.php' ?>
     <?php
         $pdo=new PDO($connect,USER,PASS);
@@ -17,3 +30,7 @@
             echo '<a href="items.php?id=',$id,'">',"<img class='liquorlist' src=",$row['image'],">",'</a>';
         }
     ?>
+</head>
+<body>
+</body>
+</html>
