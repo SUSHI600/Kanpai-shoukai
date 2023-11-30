@@ -1,9 +1,10 @@
 @charset "utf-8";
 
 .button_wrap {
+    margin-top: 2rem;
     display: flex;
-    margin-top: 4rem;
 }
+
 
 .button {
     text-decoration: none;
@@ -51,19 +52,10 @@
     margin: 0 auto;
 }
 
-.submit {
-    padding: 5px 20px;
-    width: fit-content;
-    margin: 0 auto;
-    position: relative;
-    margin-left: 0;
-    cursor: pointer;
-    color: gray;
-    text-decoration: underline;
-    text-underline-offset: 2px;
+#post {
+    width: 3rem;
 }
 
-.submit_wrap {
-    max-width: 400px;
-    margin: 0 auto;
+#code {
+    width: 4rem;
 }

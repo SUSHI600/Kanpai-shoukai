@@ -57,24 +57,8 @@ code.addEventListener('blur', function () {
     }
 });
 
-var pass = document.getElementById("word");
-var passError1 = document.getElementById("passError");
-
-pass.addEventListener('blur', function () {
-    var password = this.value;
-    var regex = /^[0-9a-zA-Z]*$/;
-
-    if (regex.test(password) || this.length == 0) {
-        passError1.innerText = "";
-    } else {
-        passError1.innerText = "不正なパスワードです。";
-    }
-});
-
 var mail1 = document.getElementById("mail");
 var mailError1 = document.getElementById("mailError1");
-var mail2 = document.getElementById("e-mail");
-var mailError2 = document.getElementById("mailError2");
 
 mail1.addEventListener('blur', function () {
     var email = mail1.value;
@@ -87,15 +71,7 @@ mail1.addEventListener('blur', function () {
     }
 });
 
-mail2.addEventListener('blur', function () {
-    if (this.value === mail1.value || this.value.length == 0) {
-        mailError2.innerText = "";
-    } else {
-        mailError2.innerText = "メールアドレスが一致しません。";
-    }
-});
-
-function send() {
+function update() {
     var input = document.getElementsByClassName("input");
     var error = document.getElementsByClassName("error");
     var errorFlg = false;
@@ -119,23 +95,14 @@ function send() {
     } else if (errorFlg) {
         alert("不正な項目があります");
     } else {
-        flg = confirm("現在の内容で登録します。\nよろしいですか？");
+        flg = confirm("現在の内容で更新します。\nよろしいですか？");
     }
 
     if (flg) {
-        document.form22.submit();
+        document.mpForm.submit();
     }
 }
 
-function HidePass() {
-    var pass = document.getElementById("word");
-    var eye = document.getElementById("buttonEye");
-
-    if (pass.type === "text") {
-        pass.type = "password";
-        eye.className = "far fa-eye";
-    } else {
-        pass.type = "text";
-        eye.className = "far fa-eye-slash";
-    }
+function prev() {
+    location.href = "./mypage.php";
 }
