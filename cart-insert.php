@@ -9,8 +9,7 @@
         $quantity = $_POST['count'];
         $item_id = $_POST['id'];
         $userid = $_SESSION['user']['id'];
-        $sql=$pdo->query('insert into carts(add_date,quantity,item_id,user_id) 
-        values(',$add_date,',',$quantity,',',$item_id,',',$userid,')');
+        $sql=$pdo->query('insert into carts(add_date,quantity,item_id,user_id) values(',$add_date,',',$quantity,',',$item_id,',',$userid,')');
         echo '<p>カートに商品を追加しました。</p>';
         echo '<hr>';
         require 'frame5_show.php';
