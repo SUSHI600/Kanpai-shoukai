@@ -22,10 +22,10 @@
     echo '<span class="far fa-eye" id="buttonEye" onclick="HidePass()"></span>';
     echo '</td></tr>';
     echo '<tr><td class="subtitle">メールアドレス：</td><td>';
-    echo '<input type="text" class="input" name="e_mail" id="mail" value="', $e_mail, '">';
+    echo '<input type="email" class="input" name="e_mail" id="mail" value="', $e_mail, '">';
     echo '</td></tr>';
     echo '<tr><td class="subtitle">メールアドレス確認：</td><td>';
-    echo '<input type="text" class="input" name="e-mail1" id="e-mail" value="', $e_mail1, '">';
+    echo '<input type="email" class="input" name="e-mail1" id="e-mail" value="', $e_mail1, '">';
     echo '</td></tr>';
     echo '<tr><td class="subtitle">生年月日：</td><td>';
     echo '<select name="year" class="input">';
