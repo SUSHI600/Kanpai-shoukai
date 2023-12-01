@@ -19,7 +19,7 @@
             $sql->execute(array(':add_date'=>$add_date,':quantity'=>$quantity,'item_id'=>$item_id,'user_id'=>$userid));
             echo '<p>カートに商品を追加しました。</p>';
             echo '<form action="cart.php">';
-            echo '<button>カートへ</button>';
+            echo '<input type="submit" value="カートを見る">';
             echo '</form>';
         }else{
             echo 'カートに商品を追加するにはログインしてください';
