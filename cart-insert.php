@@ -13,7 +13,7 @@
         $sql->execute(array(':add_date'=>$add_date,':quantity'=>$quantity,'item_id'=>$item_id,'user_id'=>$userid));
         echo '<p>カートに商品を追加しました。</p>';
         echo '<hr>';
-        require 'frame5_show.php';
+        require 'cart_show.php';
     }else{
         echo 'カートに商品を追加するにはログインしてください';
     }
