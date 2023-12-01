@@ -6,26 +6,26 @@
         crossorigin="anonymous"/>
 <h1>アンケート</h1>
 <h3>おつまみの好みを選択してください</h3>
-<span onclick="location.href='Frame22input.php'">スキップ</span>
+<span onclick="location.href='login-input.php'">スキップ</span>
 <form  name="dbQue" action="Que2.php" method="post">
 <div class="snackQue-cnt">
 <ul>
     <li>味</li>
-    <input type="radio" class="btn-check" name="taste" id="sweet" autocomplete="off">
-<label class="btn btn-secondary snackQue-label" for="sweet">甘い</label>
-    <input type="radio" class="btn-check" name="taste" id="spicy" autocomplete="off">
-<label class="btn btn-secondary snackQue-label" for="spicy">辛い</label>
-    <input type="radio" class="btn-check" name="taste" id="bitter" autocomplete="off">
-<label class="btn btn-secondary snackQue-label" for="bitter">苦い</label>
+    <input type="radio" class="btn-check" name="taste" id="sweet" value="1" autocomplete="off">
+<label class="btn btn-secondary snackQue-label" for="sweet" >甘い</label>
+    <input type="radio" class="btn-check" name="taste" id="spicy" value="2" autocomplete="off">
+<label class="btn btn-secondary snackQue-label" for="spicy" >辛い</label>
+    <input type="radio" class="btn-check" name="taste" id="bitter" value="3" autocomplete="off">
+<label class="btn btn-secondary snackQue-label" for="bitter" >苦い</label>
     <li>地域</li>
-    <input type="radio" class="btn-check" name="region" id="Asia" autocomplete="off">
-<label class="btn btn-secondary snackQue-label" for="Asia">アジア</label>
-    <input type="radio" class="btn-check" name="region" id="America" autocomplete="off">
-<label class="btn btn-secondary snackQue-label" for="America">アメリカ</label>
-    <input type="radio" class="btn-check" name="region" id="Europe" autocomplete="off">
-<label class="btn btn-secondary snackQue-label" for="Europe">ヨーロッパ</label>
-    <input type="radio" class="btn-check" name="region" id="Africa" autocomplete="off">
-<label class="btn btn-secondary snackQue-label" for="Africa">アフリカ</label>
+    <input type="radio" class="btn-check" name="region" id="Asia" value="1" autocomplete="off">
+<label class="btn btn-secondary snackQue-label" for="Asia" >アジア</label>
+    <input type="radio" class="btn-check" name="region" id="America" value="2" autocomplete="off">
+<label class="btn btn-secondary snackQue-label" for="America" >アメリカ</label>
+    <input type="radio" class="btn-check" name="region" id="Europe" value="3" autocomplete="off">
+<label class="btn btn-secondary snackQue-label" for="Europe" >ヨーロッパ</label>
+    <input type="radio" class="btn-check" name="region" id="Africa" value="4" autocomplete="off">
+<label class="btn btn-secondary snackQue-label" for="Africa" >アフリカ</label>
 </ul>
 </div>
 <span onclick="sendpost()">完了</span>

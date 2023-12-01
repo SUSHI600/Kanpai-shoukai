@@ -29,8 +29,8 @@
 
         echo '<div class="div7 container-fluid">';
         echo '<p class="row justify-content-center">お客様情報を登録しました。</p>';
-        echo '<a href="./toppage.php">';
-        echo 'TOPページへ';
+        echo '<a href="./alcoholQue.php">';
+        echo 'アンケートへ';
         echo '</a></div>';
 
         $userId = $pdo->lastInsertId();
