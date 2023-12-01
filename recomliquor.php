@@ -17,9 +17,10 @@
     </style>
     <p>おすすめ</p>
     <div class="wine"style="text-align: center;">
-    <button onclick="location.href='recombeer.php'" value="ビール" style="margin-right: 200px;">ビール</button>
-    <button onclick="location.href='recomwine.php'" value="ワイン">ワイン</button>
-    <button onclick="location.href='recomliquor.php'" value="リキュール" style="background-color: #d3d3d3;margin-left: 200px;">リキュール<br></button>
+    <button onclick="location.href='recombeer.php'" value="ビール" style="margin: 0px 50px;">ビール</button>
+    <button onclick="location.href='recomwine.php'" value="ワイン"style="margin: 0px 50px;">ワイン</button>
+    <button onclick="location.href='recomliquor.php'" value="リキュール" style="background-color: #d3d3d3;margin: 0px 50px;">リキュール<br></button>
+    <button onclick="location.href='recomsnack.php'" value="おつまみ" style="margin: 0px 50px;">おつまみ</button>
 </div>
     <?php include './db-connect.php' ?>
     <?php
