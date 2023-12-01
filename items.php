@@ -18,6 +18,8 @@
         <div class="col-7 col-sm-8">
         <div class="card-body">
             <?php    
+            $sql=$pdo->query('select curdate()');
+            $date = $sql;
             echo '<form action="cart-insert.php" method="post">';
             echo '<h5 class="card-title">',$row['name'],'</h5>';
             echo '<p class="card-text">',$row['info'],'</p>';
@@ -30,6 +32,7 @@
             echo '<input type="hidden" name="id" value="',$row['id'],'">';
             echo '<input type="hidden" name="name" value="',$row['name'],'">';
             echo '<input type="hidden" name="price" value="',$row['price'],'">';
+            echo '<input type="hidden" name="date" value="'$date'">';
             echo '<p><input type="submit" value="カートに追加"></p>';
             echo '</form>';
             }
