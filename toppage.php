@@ -35,9 +35,15 @@
     setTimeout(showSlides, 3000); // 5秒ごとにスライドを切り替える
   }
 </script>
-<span>お酒<button type="submit"><img src="img/osake.jpg" alt="osake" width="300" height="150"></button></span>
-<span>おつまみ<button type="submit"><img src="img/otumami.jpg" alt="otumami" width="300" height="150"></button></span>
-<span>晩酌セット<button type="submit"><img src="img/banshaku.jpg" alt="banshaku" width="300" height="150"></button></span>
+<form action="listalcohol.php">
+  <span>お酒<button type="submit"><img src="img/osake.jpg" alt="osake" width="300" height="150"></button></span>
+</form>
+<form action="listsnack.php">
+  <span>おつまみ<button type="submit"><img src="img/otumami.jpg" alt="otumami" width="300" height="150"></button></span>
+</form>
+<form action="listset.php">
+  <span>晩酌セット<button type="submit"><img src="img/banshaku.jpg" alt="banshaku" width="300" height="150"></button></span>
+</form>
 <!-- 追加の画像があればここに追加 -->
 
 </body>
