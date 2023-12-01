@@ -3,6 +3,10 @@ h1{
     height: 55px;
     margin-left: auto;
 }
+
+h3{
+    text-align: center;
+}
 span{
     font-weight: bold;
     font-size: large;
