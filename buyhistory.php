@@ -5,11 +5,11 @@
     echo '<table>';
     echo '<tr><th>商品</th><th>商品名</th><th>ジャンル</th><th>購入日</th><th>購入数</th><th>合計価格</th></tr>';
     $pdo=new PDO($connect,USER,PASS);
-    $sql=$pdo->query('select * from');
+    $sql=$pdo->query('select * from histories');
     foreach($sql as $row){
         echo '<tr>';
         echo '<td>';
-        echo '<a href="detail.php?id=',$id,'">',,'</a>';
+        echo '<a href="items.php?id=',$id,'">',,'</a>';
         echo '</td>';
         echo '<td>',$row['price'],'</td>';
         echo '</tr>';
