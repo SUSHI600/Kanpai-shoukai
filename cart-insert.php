@@ -12,8 +12,9 @@
         $sql=$pdo->prepare('insert into carts(add_date,quantity,item_id,user_id) values(:add_date,:quantity,:item_id,:user_id)');
         $sql->execute(array(':add_date'=>$add_date,':quantity'=>$quantity,'item_id'=>$item_id,'user_id'=>$userid));
         echo '<p>カートに商品を追加しました。</p>';
-        echo '<hr>';
-        require 'cart_show.php';
+        echo '<form action="cart.php">';
+        echo '<button>カートへ</button>';
+        echo '</form>';
     }else{
         echo 'カートに商品を追加するにはログインしてください';
     }
