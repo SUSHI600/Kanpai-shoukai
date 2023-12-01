@@ -3,3 +3,7 @@
     height: 250px;
     object-fit: contain;
 }
+
+.listmargin {
+    margin: 10 auto;
+}

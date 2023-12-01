@@ -16,6 +16,9 @@
         header('Location: login-input.php');
         // ... 以降のコード ...
     } catch (PDOException $e) {
-        echo '接続に失敗しました: ' . $e->getMessage();
+        echo '＊情報が重複しています＊';
+        echo '<form action="snackQue.php">';
+        echo '<button type="submit" class="return">アンケートに戻る</button>';
+        echo '</form>';
     }
 ?>

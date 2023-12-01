@@ -46,6 +46,6 @@
     }
     foreach($sql as $row){
         $id = $row['id'];
-        echo '<a href="items.php?id=',$id,'">',"<img class='liquorlist' src=",$row['image'],">",'</a>';
+        echo '<a href="items.php?id=',$id,'">',"<img class='liquorlist listmargin' src=",$row['image'],">",'</a>';
     }
 ?>
