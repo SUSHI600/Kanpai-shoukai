@@ -33,7 +33,7 @@
     $pdo = null;
     ?>
 
-    <?php include './frame5_show.php'; ?>
+    <?php include './cart_show.php'; ?>
 
     <script src="./js/frame5.js"></script>
     <?php include './footer.php'; ?>
