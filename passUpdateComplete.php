@@ -23,7 +23,7 @@
 
         if (password_verify($_POST['nowPass'], $select['password'])) {
             $updateSql = $pdo->prepare("update user set password = ? where id = ?");
-            $updateSql->execute([password_hash($_POST['pass'], PASSWORD_DEFAULT)], $userId);
+            $updateSql->execute([password_hash($_POST['pass'], PASSWORD_DEFAULT), $userId]);
 
             echo '<div class="div7 container-fluid">';
             echo '<p class="row justify-content-center">パスワードを変更しました。</p>';
