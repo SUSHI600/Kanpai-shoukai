@@ -2,7 +2,7 @@ function delCart(el) {
     var flg = confirm("カートから削除しますか？");
 
     if (flg) {
-        location.href = "./frame5_delete.php?id=" + el;
+        location.href = "./cart_delete.php?id=" + el;
     }
 }
 
