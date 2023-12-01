@@ -4,8 +4,8 @@
 <?php
     if(!empty($_SESSION['user'])){
         $pdo=new PDO($connect,USER,PASS);
-        $sql=$pdo->query('select curdate()');
-        $add_date = $sql;
+        $date = date('Y-m-d');
+        $add_date = $date;
         $quantity = $_POST['count'];
         $item_id = $_POST['id'];
         $userid = $_SESSION['user']['id'];
