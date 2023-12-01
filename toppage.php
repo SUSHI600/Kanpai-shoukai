@@ -1,4 +1,3 @@
-<?php require 'header.php' ?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -27,9 +26,21 @@
       height: 100%;
       object-fit: cover; /* 画像が親要素にフィットするように */
     }
+
+    body {
+      text-align: center; /* ページ全体を中央寄せ */
+    }
+
+    span {
+      margin-right: 250px; /* ボタン間の間隔を設定 */
+    }
+
+    img {
+      margin-right: 100px;/* 画像間の間隔を設定 */
+      border-radius: 10px; 
+    }
   </style>
-</head>
-<body>
+  <?php require 'header.php' ?>
 
 <div class="slideshow-container">
   <div class="slides">
@@ -61,28 +72,6 @@
     setTimeout(showSlides, 3000); // 5秒ごとにスライドを切り替える
   }
 </script>
-
-</body>
-</html>
-
-
-  <style>
-    body {
-      text-align: center; /* ページ全体を中央寄せ */
-    }
-
-    span {
-      margin-right: 250px; /* ボタン間の間隔を設定 */
-    }
-
-    img {
-      margin-right: 100px;/* 画像間の間隔を設定 */
-      border-radius: 10px; 
-    }
-  </style>
-</head>
-<body>
-
 <span button type="submit">お酒</button></span>
 <span button="" type="submit style=" position:="" relative;="" left:="" 100px; style="
     position: relative;left: 100px;">おつまみ</span>
