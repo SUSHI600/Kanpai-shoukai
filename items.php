@@ -1,5 +1,6 @@
 <?php include 'header.php'; ?>
 <?php include 'db-connect.php'; ?>
+<link rel="stylesheet" href="css/item.css">
 <?php
     $pdo=new PDO($connect,USER,PASS);
     $sql=$pdo->prepare('select * from items where id=?');
@@ -11,7 +12,7 @@
         
        <?php
        foreach($sql as $row){
-       echo '<p><img alt="image" class="img-fluid w-100" src="',$row['image'],'"></p>';
+       echo '<p><img alt="image" class="img-fluid w-100 item-image" src="',$row['image'],'"></p>';
        ?>
         </div>
         <div class="col-7 col-sm-8">
