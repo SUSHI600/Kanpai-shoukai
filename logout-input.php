@@ -1,7 +1,7 @@
 <?php session_start(); ?>
-<link rel="stylesheet" href="css/logout-input.css">
 <?php
     if(isset($_SESSION['user'])){
+        echo '<link rel="stylesheet" href="css/logout-input.css">';
         require 'header.php';
         echo '<p>ログアウトしますか？</p>';
         echo '<a class="logout" href="logout-output.php">ログアウト</a>';
