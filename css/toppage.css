@@ -38,3 +38,7 @@
     width: 100%;
     height: auto;
   }  
+  form button {
+    border: none;
+    background: transparent;
+  }
