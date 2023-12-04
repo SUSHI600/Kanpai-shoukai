@@ -9,8 +9,20 @@
     <?php
         if(isset($_SESSION['user'])){
             echo '<h3>購入履歴</h3>';
-            echo '<table>';
-            echo '<tr><th>商品</th><th>商品名</th><th>購入日</th><th>単価</th><th>購入数</th><th>合計価格</th></tr>';
+            echo '<div class="div">';
+            echo '<table class="table table-bordered">';
+            echo '<thead class="table-light">';
+            echo '<tr>';
+            echo '<th scope="col">商品</th>';
+            echo '<th scope="col">商品名</th>';
+            echo '<th scope="col">購入日</th>';
+            echo '<th scope="col">単価</th>';
+            echo '<th scope="col">購入数</th>';
+            echo '<th scope="col">合計価格</th>';
+            echo '<th scope="col"></th>';
+            echo '</tr>';
+            echo '</thead>';
+            echo '<tbody>';
             $items = [];
             $items_name = [];
             $buy_date = [];
@@ -67,7 +79,9 @@
                 echo '<td class="delete"><div onclick="delCart(', $displayCart['id'], ')"><div class="background"></div>-</div></td>';  //削除ボタン
                 echo '</tr>';
             }
+            echo '</tbody>';
             echo '</table>';
+            echo '</div>';
         }else{
             echo '購入履歴を閲覧するにはログインしてください';
         }
