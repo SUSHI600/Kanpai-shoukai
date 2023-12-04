@@ -1,0 +1,40 @@
+/* toppages.css */
+
+.form-container {
+    display: flex;
+    justify-content: space-around; /* Adjust this property based on your design preference */
+    align-items: center; /* Align items vertically in the center */
+    margin: 20px; /* Adjust margin as needed */
+  }
+  
+  form {
+    text-align: center; /* Center the content within each form */
+    margin: 0; /* Remove default form margin */
+  }
+  
+  span {
+    display: block; /* Make span a block-level element to contain the button */
+    margin-bottom: 10px; /* Add margin between spans */
+  }
+  .slideshow-container {
+    overflow: hidden;
+    width: 50%;
+    white-space: nowrap;
+    margin: 0px 300px
+  }
+
+  .slides {
+    display: inline-block;
+    transition: transform 1s ease;
+  }
+
+  .mySlides {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .mySlides img {
+    width: 100%;
+    height: auto;
+  }  
