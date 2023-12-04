@@ -3,6 +3,7 @@
 <html lang="ja">
 
 <head>
+    <link rel="stylesheet" href="css/history.css">
     <?php require 'db-connect.php'; ?>
     <?php require 'header.php'; ?>
     <?php
