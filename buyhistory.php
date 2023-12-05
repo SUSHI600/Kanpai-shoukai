@@ -19,7 +19,6 @@
             echo '<th scope="col">単価</th>';
             echo '<th scope="col">購入数</th>';
             echo '<th scope="col">合計価格</th>';
-            echo '<th scope="col"></th>';
             echo '</tr>';
             echo '</thead>';
             echo '<tbody>';
@@ -70,13 +69,12 @@
             $count = count($items);
             for($i = 0;$i < $count;$i++){
                 echo '<tr>';
-                echo '<td class="td"><img class="liquorlist" src="',$items[$i], '"></td>';
-                echo '<td class="td">', $items_name[$i], '</td>';
+                echo '<td class="img"><a href="items.php?id=',$item_id[$i],'"><img class="liquorlist" src="',$items[$i], '"></a></td>';
+                echo '<td class="td"><a href="items.php?id=',$item_id[$i],'">', $items_name[$i], '</a></td>';
                 echo '<td class="td">', $buy_date[$i], '</td>';
                 echo '<td class="td">', $price[$i], '</td>';
                 echo '<td class="td">', $buy_quantity[$i], '</td>';
                 echo '<td class="td">', $sum_price[$i], '</td>';
-                echo '<td class="delete"><div onclick="delCart(', $displayCart['id'], ')"><div class="background"></div>-</div></td>';  //削除ボタン
                 echo '</tr>';
             }
             echo '</tbody>';
