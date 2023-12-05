@@ -6,12 +6,12 @@
     align-items: center; 
     margin: 20px; 
   }
-  
+ 
   form {
     text-align: center; 
     margin: 0; 
   }
-  
+ 
   span {
     display: block; 
     margin-bottom: 10px; 
@@ -23,18 +23,18 @@
     white-space: nowrap;
     margin: 0px 0px
   }
-
+ 
   .slides {
     display: inline-block;
     transition: transform 1s ease;
   }
-
+ 
   .mySlides {
     display: inline-block;
     width: 100%;
     box-sizing: border-box;
   }
-
+ 
   .mySlides img {
     width: 100%;
     height: 500px;
