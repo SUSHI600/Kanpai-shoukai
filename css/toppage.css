@@ -42,3 +42,15 @@
     border: none;
     background: transparent;
   }
+  .form-container {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;  
+  }
+  
+  
+  .form-container img {
+    border-radius: 10px; 
+  }
+ 
+  
