@@ -1,20 +1,18 @@
-/* toppages.css */
-
 .form-container {
     display: flex;
-    justify-content: space-around; /* Adjust this property based on your design preference */
-    align-items: center; /* Align items vertically in the center */
-    margin: 20px; /* Adjust margin as needed */
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
   }
-  
+ 
   form {
-    text-align: center; /* Center the content within each form */
-    margin: 0; /* Remove default form margin */
+    text-align: center;
+    margin: 0;
   }
-  
+ 
   span {
-    display: block; /* Make span a block-level element to contain the button */
-    margin-bottom: 10px; /* Add margin between spans */
+    display: block;
+    margin-bottom: 10px;
   }
   .slideshow-container {
     overflow: hidden;
@@ -22,23 +20,33 @@
     white-space: nowrap;
     margin: 0px 300px
   }
-
+ 
   .slides {
     display: inline-block;
     transition: transform 1s ease;
   }
-
+ 
   .mySlides {
     display: inline-block;
     width: 100%;
     box-sizing: border-box;
   }
-
+ 
   .mySlides img {
     width: 100%;
-    height: auto;
+    height: 100%;
   }  
   form button {
     border: none;
     background: transparent;
+  }
+  .form-container {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;  
+  }
+ 
+ 
+  .form-container img {
+    border-radius: 10px;
   }

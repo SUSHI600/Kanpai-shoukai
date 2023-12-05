@@ -15,12 +15,23 @@
             $quantity = $_POST['count'];
             $item_id = $_POST['id'];
             $userid = $_SESSION['user']['id'];
-            $sql=$pdo->prepare('insert into carts(add_date,quantity,item_id,user_id) values(:add_date,:quantity,:item_id,:user_id)');
-            $sql->execute(array(':add_date'=>$add_date,':quantity'=>$quantity,'item_id'=>$item_id,'user_id'=>$userid));
-            echo '<p>カートに商品を追加しました。</p>';
-            echo '<form action="cart.php">';
-            echo '<input type="submit" value="カートを見る">';
-            echo '</form>';
+
+            $existingCartItem = $pdo->prepare('SELECT * FROM carts WHERE item_id = :item_id AND user_id = :user_id');
+            $existingCartItem->execute(array(':item_id' => $item_id, ':user_id' => $userid));
+            $existingItem = $existingCartItem->fetch(PDO::FETCH_ASSOC);
+
+            if ($existingItem) {
+                $newQuantity = $existingItem['quantity'] + $quantity;
+                $updateCartItem = $pdo->prepare('UPDATE carts SET quantity = :quantity WHERE item_id = :item_id AND user_id = :user_id');
+                $updateCartItem->execute(array(':quantity' => $newQuantity, ':item_id' => $item_id, ':user_id' => $userid));
+                echo '<p>カートに商品を追加しました。</p>';
+            } else {
+                $sql = $pdo->prepare('INSERT INTO carts(add_date,quantity,item_id,user_id) VALUES(:add_date,:quantity,:item_id,:user_id)');
+                $sql->execute(array(':add_date'=>$add_date,':quantity'=>$quantity,'item_id'=>$item_id,'user_id'=>$userid));
+                echo '<p>カートに商品を追加しました。</p>';
+            }
+            echo '<form action="cart.php"><input type="submit" value="カートを見る"></form>';
+            echo '<input type="submit" onclick="history.back(-1)" value="お買い物を続ける">';
         }else{
             echo 'カートに商品を追加するにはログインしてください';
         }
