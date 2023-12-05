@@ -1,4 +1,27 @@
-<?php session_start(); ?>
+<?php session_start(); 
+include './db-connect.php';
+$pdo = new PDO($connect, USER, PASS);
+
+if (!isset($_SESSION['user'])) {
+    echo "ログイン/新規登録してください",'<br>';
+    echo '<a href="login-input.php">ログイン/新規登録</a>';
+    exit;
+}
+
+// ユーザーIDを取得
+$id = $_SESSION['user']['id'];
+
+// アンケートに回答していない場合
+$sql = $pdo->prepare('SELECT COUNT(*) as count FROM fav_liquors WHERE id = ?');
+$sql->execute([$id]);
+$data = $sql->fetch();
+
+if ($data['count'] == 0) {
+    echo "アンケートに答えてください",'<br>';
+    echo '<a href="alcoholQue.php">回答する</a>';
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -21,7 +44,6 @@
     <button onclick="location.href='recomwine.php'" value="ワイン" style="margin: 0px 50px;">ワイン</button>
     <button onclick="location.href='recomliquor.php'" value="リキュール" style="margin: 0px 50px;">リキュール<br></button>
     <button onclick="location.href='recomsnack.php'" value="おつまみ" style="margin: 0px 50px;">おつまみ</button>
-    <?php include './db-connect.php' ?>
     </div>
     <?php
         $pdo=new PDO($connect,USER,PASS);
