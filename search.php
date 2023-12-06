@@ -51,5 +51,10 @@
     foreach($sql as $row){
         $id = $row['id'];
         echo '<a href="items.php?id=',$id,'">','<img class="liquorlist listmargin" src="',$row['image'],'">','</a>';
+        echo '<div class="card-body">';
+        echo '<h5 class="card-title">',$row['name'],'</h5>';
+        echo '<p class="card-text">',$row['price'],'</p>';
+        echo '</div>';
     }
 ?>
+
