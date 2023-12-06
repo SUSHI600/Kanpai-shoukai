@@ -9,10 +9,12 @@
 }
 .th{
     text-align: center;
+    background-color: darkgrey !important;
 }
 .td {
     text-align: center;
     vertical-align: middle;
+    color: white;
 }
 .div {
     margin-bottom: 4rem;
@@ -36,9 +38,7 @@
     background-color: rgba(209, 209, 209, 0.782);
     color: #000;
 }
-h3{
+h2{
     text-align: center;
-}
-.img{
-    text-align: center;
+    color: white;
 }
