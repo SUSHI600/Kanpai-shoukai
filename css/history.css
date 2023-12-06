@@ -7,6 +7,9 @@
     max-width: 700px;
     margin: 0 auto;
 }
+.th{
+    text-align: center;
+}
 .td {
     text-align: center;
     vertical-align: middle;

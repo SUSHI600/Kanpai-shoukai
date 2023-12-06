@@ -13,12 +13,12 @@
             echo '<table class="table table-bordered">';
             echo '<thead class="table-light">';
             echo '<tr>';
-            echo '<th scope="col">商品</th>';
-            echo '<th scope="col">商品名</th>';
-            echo '<th scope="col">購入日</th>';
-            echo '<th scope="col">単価</th>';
-            echo '<th scope="col">購入数</th>';
-            echo '<th scope="col">合計価格</th>';
+            echo '<th scope="col" class="th">商品</th>';
+            echo '<th scope="col" class="th">商品名</th>';
+            echo '<th scope="col" class="th">購入日</th>';
+            echo '<th scope="col" class="th">単価</th>';
+            echo '<th scope="col" class="th">購入数</th>';
+            echo '<th scope="col" class="th">合計価格</th>';
             echo '</tr>';
             echo '</thead>';
             echo '<tbody>';
