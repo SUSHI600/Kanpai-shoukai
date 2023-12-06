@@ -8,12 +8,11 @@
     <?php require 'header.php'; ?>
     <?php
         if(isset($_SESSION['user'])){
-            echo '<h3>購入履歴</h3>';
+            echo '<h2>購入履歴</h2>';
             echo '<div class="div">';
             echo '<table class="table table-bordered">';
             echo '<thead class="table-light">';
             echo '<tr>';
-            echo '<th scope="col" class="th">商品</th>';
             echo '<th scope="col" class="th">商品名</th>';
             echo '<th scope="col" class="th">購入日</th>';
             echo '<th scope="col" class="th">単価</th>';
@@ -69,7 +68,6 @@
             $count = count($items);
             for($i = 0;$i < $count;$i++){
                 echo '<tr>';
-                echo '<td class="img"><a href="items.php?id=',$item_id[$i],'"><img class="liquorlist" src="',$items[$i], '"></a></td>';
                 echo '<td class="td"><a href="items.php?id=',$item_id[$i],'">', $items_name[$i], '</a></td>';
                 echo '<td class="td">', $buy_date[$i], '</td>';
                 echo '<td class="td">', $price[$i], '</td>';
