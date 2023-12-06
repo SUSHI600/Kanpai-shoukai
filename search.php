@@ -37,6 +37,10 @@
                 $sql=$pdo->query('select * from items where name like "つまみ" 
                 or category_id = 2');
                 break;
+            case '晩酌セット':
+                $sql=$pdo->query('select * from items where name like "つまみ" 
+                or category_id = 3');
+                break;
             default:
             $sql=$pdo->prepare('select * from items where name like ?');
             $sql->execute(['%'.$_POST['search'].'%']);
@@ -46,6 +50,6 @@
     }
     foreach($sql as $row){
         $id = $row['id'];
-        echo '<a href="items.php?id=',$id,'">',"<img class='liquorlist listmargin' src=",$row['image'],">",'</a>';
+        echo '<a href="items.php?id=',$id,'">','<img class="liquorlist listmargin" src="',$row['image'],'">','</a>';
     }
 ?>
