@@ -16,7 +16,17 @@
       $imageList = glob("top/*.jpg");
       foreach ($imageList as $image) {
         echo '<div class="mySlides">';
-        echo '<img src="' . $image . '">';
+        switch($image){
+          case 'top/top1.jpg':
+            echo '<a href="listalcohol.php"><img src="' . $image . '"></a>';
+            break;
+          case 'top/top2.jpg':
+            echo '<a href="listsnack.php"><img src="' . $image . '"></a>';
+            break;
+          case 'top/top3.jpg':
+            echo '<a href="listset.php"><img src="' . $image . '"></a>';
+            break;
+        }
         echo '</div>';
       }
     ?>
