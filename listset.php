@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <link rel="stylesheet" href="./css/search.css">
+    <link rel="stylesheet" href="css/search.css">
     <?php require 'db-connect.php' ?>
     <?php require 'header.php' ?>
     <?php
