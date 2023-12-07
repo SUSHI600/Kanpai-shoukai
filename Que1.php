@@ -15,10 +15,18 @@
         
             $stmt = $pdo->prepare('INSERT INTO fav_liquors (id,taste_id, liquor_id, country_id) VALUES (?, ?, ?, ?)');
             $stmt->execute([$id,$taste, $kinds, $region]);
+        header('Location: snackQue.php');
+        }else{
+            if(unset($_SESSION['user']['id'])){
+                echo 'ログインしてください';
+                echo '<a href="login-input.php">ログイン/新規登録へ</a>';
+            }elseif(unset($_POST['taste']) || unset($_POST['kinds']) || unset($_POST['region'])){
+                echo '選択していない項目があります';
+                echo 'アンケートをやりなおしてください';
+                echo '<button type="submit" class="return">アンケートに戻る</button>';
+            }
         }
         // アンケート結果をデータベースに挿入
-       
-        header('Location: snackQue.php');
         // ... 以降のコード ...
     } catch (PDOException $e) {
         echo '＊情報が重複しています＊';
