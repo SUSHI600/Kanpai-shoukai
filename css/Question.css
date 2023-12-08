@@ -57,7 +57,6 @@ label{
     margin: auto;
     margin-bottom: 1rem;
     transition: .2s all;
-    text-align: center;
 }
 .send:hover {
     background-color: rgba(209, 209, 209, 0.782);
@@ -74,4 +73,8 @@ label{
     margin: auto;
     margin-bottom: 1rem;
     transition: .2s all;
+}
+
+.send-area{
+    text-align: center;
 }
