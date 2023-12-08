@@ -1,5 +1,9 @@
-<?php session_start(); 
-include './db-connect.php';
+<?php session_start(); ?>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <link rel="stylesheet" href="css/recommend.css">
+<?php include './db-connect.php';
 $pdo = new PDO($connect, USER, PASS);
 include './header.php';
 
@@ -18,15 +22,11 @@ $sql->execute([$id]);
 $data = $sql->fetch();
 
 if ($data['count'] == 0) {
-    echo "アンケートに答えてください",'<br>';
-    echo '<a href="alcoholQue.php">回答する</a>';
+    echo '<p class="ans">アンケートに答えてください</p>';
+    echo '<a class="ansgo" href="alcoholQue.php">回答する</a>';
     exit;
 }
 ?>
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <link rel="stylesheet" href="css/recommend.css">
     <p>おすすめ</p>
     <style>
         body {
