@@ -6,8 +6,10 @@
         crossorigin="anonymous"/>
 <script src="js/question.js?v=1.0.1"></script>
 <h1>アンケート</h1>
-<h3>お酒の好みを選択してください</h3>
-<button class="send" onclick="skip()">スキップ</button>
+<div class="high-area">
+    <button class="skip" onclick="skip()">スキップ</button>
+    <h3>お酒の好みを選択してください</h3>
+</div>
 <form  name="dbQue" action="Que1.php" method="post">
 <div class="alcoholQue-cnt">
 <ul>
