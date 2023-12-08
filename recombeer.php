@@ -1,6 +1,7 @@
 <?php session_start(); 
 include './db-connect.php';
 $pdo = new PDO($connect, USER, PASS);
+include './header.php';
 
 if (!isset($_SESSION['user'])) {
     echo "ログイン/新規登録してください",'<br>';
@@ -26,7 +27,6 @@ if ($data['count'] == 0) {
 <html lang="ja">
 <head>
     <link rel="stylesheet" href="css/recommend.css">
-<?php include './header.php' ?>
     <p>おすすめ</p>
     <style>
         body {
