@@ -4,10 +4,9 @@
         rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
         crossorigin="anonymous"/>
-<script src="js/question.js?v=1.0.1"></script>
+<script src="js/question.js?v=1.0.2"></script>
 <h1>アンケート</h1>
 <div class="high-area">
-    <button class="skip" onclick="skip()">スキップ</button>
     <h3>お酒の好みを選択してください</h3>
 </div>
 <form  name="dbQue" action="Que1.php" method="post">
@@ -42,4 +41,5 @@
     <button class="send" onclick="sendpost()">次へ</button>
 </div>
 </form>
+<a href="login-input.php" class="skip">スキップ</a>
 <?php include 'footer.php'; ?>
