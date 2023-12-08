@@ -41,5 +41,7 @@
     <button class="send" onclick="sendpost()">次へ</button>
 </div>
 </form>
-<a href="login-input.php" class="skip">スキップ</a>
+<div class="skip">
+    <a href="login-input.php">アンケートをスキップする</a>
+</div>
 <?php include 'footer.php'; ?>
