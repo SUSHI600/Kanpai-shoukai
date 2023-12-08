@@ -27,7 +27,9 @@
 <label class="btn btn-secondary snackQue-label" for="Africa" >アフリカ</label>
 </ul>
 </div>
-<button class="send" onclick="sendpost()">完了</button>
+<div class="send-area">
+    <button class="send" onclick="sendpost()">完了</button>
+</div>
 </form>
 <script src="./js/snackQue.js"></script>
 <?php include 'footer.php'; ?>
