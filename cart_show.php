@@ -85,8 +85,8 @@ if(isset($_SESSION['user'])){
             echo '<div class="info_wrap">';
             echo '<p class="info">支払い方法</p>';
             echo '<div class="pay_wrap">';
-            echo '<select name="pay" class="pay">';
-            echo '<option hidden>選択してください</option>';
+            echo '<select name="pay" class="pay" id="pay">';
+            echo '<option hidden value="">選択してください</option>';
             echo '<option value="1">クレジットカード払い</option>';
             echo '<option value="2">コンビニ払い</option>';
             echo '</select>';
