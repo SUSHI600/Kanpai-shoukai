@@ -1,5 +1,8 @@
 <?php session_start(); ?>
-<?php 
+<?php
+    if(isset($_SESSION['user'])){
+        header('Location:./toppage.php');
+    }
     echo '<!DOCTYPE html>';
     echo '<html long="ja">';
 
