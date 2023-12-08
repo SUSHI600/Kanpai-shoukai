@@ -1,8 +1,5 @@
-function alcoholskip(){
-    location.href = 'snackQue.php';
-}
-function snackskip(){
-    location.href = 'top.php';
+function skip(){
+    location.href = 'login-input.php';
 }
 
 function sendpost(){
