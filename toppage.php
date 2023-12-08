@@ -17,13 +17,19 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="top/osake.jpg" class="d-block w-100" alt="top1.jpg">
+      <a href="listalcohol.php">
+        <img src="top/osake.jpg" class="d-block w-100" alt="top1.jpg">
+      </a>
     </div>
     <div class="carousel-item">
-      <img src="top/otumami.jpg" class="d-block w-100" alt="top2.jpg">
+      <a href="listsnack.php">
+        <img src="top/otumami.jpg" class="d-block w-100" alt="top2.jpg">
+      </a>
     </div>
     <div class="carousel-item">
-      <img src="top/osake.set.jpg" class="d-block w-100" alt="top3.jpg">
+      <a href="listset.php">
+        <img src="top/osake.set.jpg" class="d-block w-100" alt="top3.jpg">
+      </a>
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
