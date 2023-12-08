@@ -28,8 +28,8 @@
                 echo '</div>';
             }elseif(!isset($_POST['taste']) || !isset($_POST['region'])){
                 echo '<div class="error">';
-                echo '<h3>選択していない項目があります</h3>';
-                echo '<h3>アンケートをやりなおしてください</h3>';
+                echo '<h3>選択していない項目があります<br>';
+                echo 'アンケートをやりなおしてください</h3>';
                 echo '<a href="snackQue.php"><h5>アンケートに戻る</h5></a>';
                 echo '</div>';
             }
