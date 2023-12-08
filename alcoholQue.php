@@ -4,10 +4,9 @@
         rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
         crossorigin="anonymous"/>
-<script src="js/question.js?v=1.0.0"></script>
+<script src="js/question.js?v=1.0.1"></script>
 <h1>アンケート</h1>
 <h3>お酒の好みを選択してください</h3>
-<span onclick="alcoholskip()">スキップ</span>
 <form  name="dbQue" action="Que1.php" method="post">
 <div class="alcoholQue-cnt">
 <ul>
@@ -36,6 +35,9 @@
 <label class="btn btn-secondary alcoholQue-label" for="Africa" >アフリカ</label>
 </ul>
 </div>
-<span onclick="sendpost()">次へ</span>
+<div class="send-area">
+    <button class="send" onclick="sendpost()">次へ</button>
+</div>
 </form>
+<button class="send" onclick="skip()">スキップ</button>
 <?php include 'footer.php'; ?>
