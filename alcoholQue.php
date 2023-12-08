@@ -7,7 +7,7 @@
 <script src="js/question.js?v=1.0.1"></script>
 <h1>アンケート</h1>
 <div class="high-area">
-    <button class="send" onclick="skip()">スキップ</button>
+    <button class="skip" onclick="skip()">スキップ</button>
     <h3>お酒の好みを選択してください</h3>
 </div>
 <form  name="dbQue" action="Que1.php" method="post">
