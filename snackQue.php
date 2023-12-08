@@ -6,7 +6,6 @@
         crossorigin="anonymous"/>
 <h1>アンケート</h1>
 <h3>おつまみの好みを選択してください</h3>
-<span onclick="location.href='login-input.php'">スキップ</span>
 <form  name="dbQue" action="Que2.php" method="post">
 <div class="snackQue-cnt">
 <ul>
