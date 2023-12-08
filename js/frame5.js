@@ -29,5 +29,5 @@ function buy() {
 }
 
 function prev() {
-    window.history.back();
+    location.href="./toppage.php";
 }

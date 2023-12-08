@@ -31,7 +31,9 @@
                 echo '<p>カートに商品を追加しました。</p>';
             }
             echo '<form action="cart.php"><input type="submit" value="カートを見る"></form>';
-            echo '<input type="submit" onclick="history.back(-1)" value="お買い物を続ける">';
+            echo '<form action="search.php">';
+            echo '<input type="submit" value="お買い物を続ける">';
+            echo '</form>';
         }else{
             echo 'カートに商品を追加するにはログインしてください';
         }
