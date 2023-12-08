@@ -20,9 +20,9 @@
             <?php    
             echo '<form action="cart-insert.php" method="post">';
             echo '<h5 class="card-title">',$row['name'],'</h5>';
-            echo '<p class="card-text">',$row['info'],'</p>';
-            echo '<p class="card-text">価格：',$row['price'],'円</p>';
-            echo '<p> 購入数：<select name="count">';
+            echo '<p class="card-text1">',$row['info'],'</p>';
+            echo '<p class="card-text2">',$row['price'],'</p>';
+            echo '<p> <select name="count">';
 
         for($i=1;$i<=100;$i++){
             echo '<option value="',$i,'">',$i,'</option>';
