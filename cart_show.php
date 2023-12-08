@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="css/cart.show.css">
 <?php
 if(isset($_SESSION['user'])){
     $userID = $_SESSION['user']['id'];
