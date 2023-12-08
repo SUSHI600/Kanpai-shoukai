@@ -38,6 +38,6 @@
         $sql->execute([$data2['taste_id'],$data2['country_id']]);
         foreach($sql as $row){
             $id = $row['id'];
-            echo '<a href="items.php?id=',$id,'">',"<img class='liquorlist' src=",$row['image'],">",'</a>';
+            echo '<a href="items.php?id=',$id,'">',"<img class='liquorlist listmargin' src=",$row['image'],">",'</a>';
         }
     ?>
