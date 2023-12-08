@@ -62,3 +62,6 @@ label{
     background-color: rgba(209, 209, 209, 0.782);
     color: #000;
 }
+.high-area{
+    display: flex;
+}
