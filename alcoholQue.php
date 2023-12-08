@@ -7,6 +7,7 @@
 <script src="js/question.js?v=1.0.1"></script>
 <h1>アンケート</h1>
 <h3>お酒の好みを選択してください</h3>
+<button class="send" onclick="skip()">スキップ</button>
 <form  name="dbQue" action="Que1.php" method="post">
 <div class="alcoholQue-cnt">
 <ul>
@@ -39,5 +40,4 @@
     <button class="send" onclick="sendpost()">次へ</button>
 </div>
 </form>
-<button class="send" onclick="skip()">スキップ</button>
 <?php include 'footer.php'; ?>
