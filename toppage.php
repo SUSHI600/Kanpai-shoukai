@@ -5,64 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/toppage.css">
   <?php require 'header.php' ?>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
-<div class="slideshow-container">
-  <div class="slides">
-    <?php
-      $imageList = glob("top/*.jpg");
-      foreach ($imageList as $image) {
-        echo '<div class="mySlides">';
-        switch($image){
-          case 'top/top1.jpg':
-            echo '<a href="listalcohol.php">';
-            break;
-          case 'top/top2.jpg':
-            echo '<a href="listsnack.php">';
-            break;
-          case 'top/top3.jpg':
-            echo '<a href="listset.php">';
-            break;
-        }
-        echo '<img src="' . $image . '"></a>';
-        echo '</div>';
-      }
-    ?>
+<div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="top/osake.jpg" class="d-block w-100" alt="top1.jpg">
+    </div>
+    <div class="carousel-item">
+      <img src="top/otumami.jpg" class="d-block w-100" alt="top2.jpg">
+    </div>
+    <div class="carousel-item">
+      <img src="top/osake.set.jpg" class="d-block w-100" alt="top3.jpg">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
-
-<script>
-  var slideIndex = 0;
-  showSlides();
-
-  function showSlides() {
-    var slidesContainer = document.querySelector('.slides');
-    var slideWidth = document.querySelector('.mySlides').offsetWidth;
-
-    slideIndex++;
-    if (slideIndex >= slidesContainer.children.length) {
-      slideIndex = 0;
-    }
-
-    slidesContainer.style.transform = 'translateX(' + (-slideIndex * slideWidth) + 'px)';
-    setTimeout(showSlides, 3000); // 5秒ごとにスライドを切り替える
-  }
-</script>
-
-<div class="form-container">
-  <form  action="listalcohol.php">
-  <span style="color: white;">お酒<br><button type="submit"><img src="img/osake.jpg" alt="osake" width="300" height="150"></button></span>
-  </form>
-  <form action="listsnack.php">
-  <span style="color: white;"> おつまみ<br><button type="submit"><img src="img/otumami.jpg" alt="otumami" width="300" height="150"></button></span>
-  </form>
-  <form action="listset.php">
-  <span style="color: white;"> 晩酌セット<br><button type="submit"><img src="img/banshaku.jpg" alt="banshaku" width="300" height="150"></button></span>
-  </form>
-</div>
-
 </body>
 </html>

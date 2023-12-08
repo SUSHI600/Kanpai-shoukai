@@ -1,6 +1,6 @@
 <?php require 'header.php' ?>
 <?php require 'db-connect.php' ?>
-<link rel="stylesheet" href="./css/search.css">
+<link rel="stylesheet" href="css/search.css">
 <?php
     $pdo=new PDO($connect,USER,PASS);
     if(isset($_POST['search'])){
@@ -53,3 +53,4 @@
         echo '<a href="items.php?id=',$id,'">','<img class="liquorlist listmargin" src="',$row['image'],'">','</a>';
     }
 ?>
+
