@@ -46,7 +46,7 @@ label{
     justify-content: center;
     display: flex;
 }
-.button {
+.send {
     text-decoration: none;
     color: #000;
     padding: 10px 20px;
@@ -58,7 +58,7 @@ label{
     margin-bottom: 1rem;
     transition: .2s all;
 }
-.button:hover {
+.send:hover {
     background-color: rgba(209, 209, 209, 0.782);
     color: #000;
 }
