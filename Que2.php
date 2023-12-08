@@ -22,12 +22,16 @@
             echo '<link rel="stylesheet" href="css/Que.css">';
             require 'header2.php';
             if(!isset($_SESSION['user']['id'])){
+                echo '<div class="error">';
                 echo '<h3>ログインしてください</h3>';
                 echo '<a href="login-input.php"><h5>ログイン/新規登録へ</h5></a>';
+                echo '</div>';
             }elseif(!isset($_POST['taste']) || !isset($_POST['region'])){
+                echo '<div class="error">';
                 echo '<h3>選択していない項目があります</h3>';
                 echo '<h3>アンケートをやりなおしてください</h3>';
                 echo '<a href="alcoholQue.php"><h5>アンケートに戻る</h5></a>';
+                echo '</div>';
             }
         }
         // ... 以降のコード ...
@@ -36,8 +40,10 @@
         echo '<html lang="ja">';
         echo '<head>';
         echo '<link rel="stylesheet" href="css/Que.css">';
+        echo '<div class="error">';
         echo '<h3>＊情報が重複しています＊</h3>';
         echo '<a href="alcoholQue.php"><h5>アンケートに戻る</h5></a>';
+        echo '</div>';
     }
 ?>
 <?php require 'footer.php'; ?>
