@@ -30,7 +30,7 @@
                 echo '<div class="error">';
                 echo '<h3>選択していない項目があります</h3>';
                 echo '<h3>アンケートをやりなおしてください</h3>';
-                echo '<a href="alcoholQue.php"><h5>アンケートに戻る</h5></a>';
+                echo '<a href="snackQue.php"><h5>アンケートに戻る</h5></a>';
                 echo '</div>';
             }
         }
@@ -42,7 +42,7 @@
         echo '<link rel="stylesheet" href="css/Que.css">';
         echo '<div class="error">';
         echo '<h3>＊情報が重複しています＊</h3>';
-        echo '<a href="alcoholQue.php"><h5>アンケートに戻る</h5></a>';
+        echo '<a href="snackQue.php"><h5>アンケートに戻る</h5></a>';
         echo '</div>';
     }
 ?>
