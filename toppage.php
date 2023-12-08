@@ -54,13 +54,13 @@
 
 <div class="form-container">
   <form  action="listalcohol.php">
-  お酒<span><button type="submit"><img src="img/osake.jpg" alt="osake" width="300" height="150"></button></span>
+  <span style="color: white;">お酒<br><button type="submit"><img src="img/osake.jpg" alt="osake" width="300" height="150"></button></span>
   </form>
   <form action="listsnack.php">
-  おつまみ<span><button type="submit"><img src="img/otumami.jpg" alt="otumami" width="300" height="150"></button></span>
+  <span style="color: white;"> おつまみ<br><button type="submit"><img src="img/otumami.jpg" alt="otumami" width="300" height="150"></button></span>
   </form>
   <form action="listset.php">
-  晩酌セット<span><button type="submit"><img src="img/banshaku.jpg" alt="banshaku" width="300" height="150"></button></span>
+  <span style="color: white;"> 晩酌セット<br><button type="submit"><img src="img/banshaku.jpg" alt="banshaku" width="300" height="150"></button></span>
   </form>
 </div>
 
