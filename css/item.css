@@ -3,3 +3,9 @@
   height: 250px;
   object-fit: contain;
 }
+.card-text1{
+  font-size: 22px;
+}
+.card-text2{
+  font-size: 30px;
+}
