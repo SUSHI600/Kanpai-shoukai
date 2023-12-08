@@ -95,7 +95,7 @@ if(isset($_SESSION['user'])){
             echo '</div>';
     
             echo '<div class="button_wrap">';
-            echo '<div class="button prev" onclick="prev()">戻る</div>';
+            echo '<div class="button prev" onclick="prev()">TOPに戻る</div>';
             if ($liquorFlg) {
                 echo '<div class="button next" onclick="liquorBuy(', $age, ')">購入</div>';
             } else {
