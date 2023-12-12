@@ -30,10 +30,8 @@
                 $sql->execute(array(':add_date'=>$add_date,':quantity'=>$quantity,'item_id'=>$item_id,'user_id'=>$userid));
                 echo '<p>カートに商品を追加しました。</p>';
             }
-            echo '<button onclick="location.href=\'cart.php\'">カートを見る</button>';
-            echo '<form action="search.php">';
-            echo '<input type="submit" value="お買い物を続ける">';
-            echo '</form>';
+            echo '<button class="button" onclick="location.href=\'cart.php\'">カートを見る</button>';
+            echo '<button class="button" onclick="location.href=\'search.php\'">カートを見る</button>';
         }else{
             echo 'カートに商品を追加するにはログインしてください';
         }
