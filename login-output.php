@@ -32,11 +32,19 @@
         }
 
         if (isset($_SESSION['user'])) {
-            echo '<div class="div7 container-fluid">';
-            echo '<p class="row justify-content-center">ログインしました。</p>';
-            echo '<a href="./toppage.php">';
-            echo 'TOPページへ';
-            echo '</a></div>';
+            if($_SESSION['user']['id'] == 56){
+                echo '<div class="div7 container-fluid">';
+                echo '<p class="row justify-content-center">管理者専用のページにログインしました。</p>';
+                echo '<a href="./user.php">';
+                echo 'ユーザー一覧へ';
+                echo '</a></div>';
+            }else{
+                echo '<div class="div7 container-fluid">';
+                echo '<p class="row justify-content-center">ログインしました。</p>';
+                echo '<a href="./toppage.php">';
+                echo 'TOPページへ';
+                echo '</a></div>';
+            }
         } else {
             echo '<div class="div7 container-fluid">';
             echo '<p class="row justify-content-center">メールアドレスまたはパスワードが違います。</p>';
