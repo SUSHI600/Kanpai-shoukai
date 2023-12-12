@@ -3,7 +3,7 @@
 <html long="ja">
 
 <head>
-    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/frame5.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
     <?php require 'header.php'; ?>
     <?php require 'db-connect.php'; ?>
