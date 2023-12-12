@@ -35,7 +35,7 @@
             if($_SESSION['user']['id'] == 56){
                 echo '<div class="div7 container-fluid">';
                 echo '<p class="row justify-content-center">管理者専用のページにログインしました。</p>';
-                echo '<a href="./user.php">';
+                echo '<a href="./listuser.php">';
                 echo 'ユーザー一覧へ';
                 echo '</a></div>';
             }else{
