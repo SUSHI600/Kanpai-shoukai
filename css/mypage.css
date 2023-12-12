@@ -51,6 +51,10 @@
     margin: 0 auto;
 }
 
+.data {
+    max-width: 200px;
+}
+
 .submit {
     padding: 5px 20px;
     width: fit-content;

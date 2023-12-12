@@ -17,19 +17,19 @@ if (isset($_SESSION['user'])) {
         $day = date("d", strtotime($row['birthday']));
 
         echo '<table class="table">';
-        echo '<tr><td class="subtitle">ユーザーネーム：</td><td>';
+        echo '<tr><td class="subtitle">ユーザーネーム：</td><td class="data">';
         echo $row['name'];
         echo '</td></tr>';
-        echo '<tr><td class="subtitle">メールアドレス：</td><td>';
+        echo '<tr><td class="subtitle">メールアドレス：</td><td class="data">';
         echo $row['e_mail'];
         echo '</td></tr>';
-        echo '<tr><td class="subtitle">生年月日：</td><td>';
+        echo '<tr><td class="subtitle">生年月日：</td><td class="data">';
         echo $year, '年', $month, '月', $day, '日';
         echo '</td></tr>';
-        echo '<tr><td class="subtitle">郵便番号：</td><td>';
+        echo '<tr><td class="subtitle">郵便番号：</td><td class="data">';
         echo '〒', $row['postcode'];
         echo '</td></tr>';
-        echo '<tr><td class="subtitle">住所：</td><td>';
+        echo '<tr><td class="subtitle">住所：</td><td class="data">';
         echo $row['address'];
         echo '</td></tr>';
         echo '</table>';
