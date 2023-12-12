@@ -10,5 +10,5 @@
     <?php include './db-connect.php'; ?>
     <?php include './cart_show.php'; ?>
 
-    <script src="./js/frame5.js"></script>
+    <script src="./js/frame5.js?v=1.0.1"></script>
     <?php include './footer.php' ?>

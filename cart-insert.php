@@ -30,7 +30,7 @@
                 $sql->execute(array(':add_date'=>$add_date,':quantity'=>$quantity,'item_id'=>$item_id,'user_id'=>$userid));
                 echo '<p>カートに商品を追加しました。</p>';
             }
-            echo '<form action="cart.php"><input type="submit" value="カートを見る"></form>';
+            echo '<button onclick="location.href=\'cart.php\'">カートを見る</button>';
             echo '<form action="search.php">';
             echo '<input type="submit" value="お買い物を続ける">';
             echo '</form>';
