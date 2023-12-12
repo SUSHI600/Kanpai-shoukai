@@ -3,6 +3,7 @@ h2{
 }
 .table {
     margin: 0 auto;
+    max-width: 90%;
 }
 .th{
     text-align: center;
