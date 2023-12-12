@@ -38,7 +38,7 @@
             $delHistorySql->execute([$userId]);
         }
 
-        $favLiquorSql = $pdo->prepare("select * from fav_liquors where user_id = ?");
+        $favLiquorSql = $pdo->prepare("select * from fav_liquors where id = ?");
         $favLiquorSql->execute([$userId]);
         $favLiquor = $favLiquorSql->fetch(PDO::FETCH_ASSOC);
         if ($favLiquor !== false) {
