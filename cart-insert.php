@@ -31,7 +31,7 @@
                 echo '<p>カートに商品を追加しました。</p>';
             }
             echo '<button class="button" onclick="location.href=\'cart.php\'">カートを見る</button>';
-            echo '<button class="button" onclick="location.href=\'search.php\'">カートを見る</button>';
+            echo '<button class="button" onclick="location.href=\'search.php\'">お買い物を続ける</button>';
         }else{
             echo 'カートに商品を追加するにはログインしてください';
         }
