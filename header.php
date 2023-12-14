@@ -1,13 +1,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/header.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 <title>乾杯商会</title>
 </head>
-
-<body background="img/wood.jpg">
-	<nav class="navbar navbar-expand-lg navbar-light bg-light ">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="#">酒楽広場</a>
+<body>
+<div class='fixed-top'>
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <a class="navbar-brand" href="#">乾杯商会</a>
 			<form action="search.php" method="post" class="d-flex justify-content-center" style="width: 55%; padding:0 60px 0 250px;">
 				<input class="form-control me-2" type="search" name="search" placeholder="Search" aria-label="Search">
 				<button class="btn btn-outline-success" type="submit">Search</button>
@@ -27,3 +27,4 @@
 			</div>
 		</div>
 	</nav>
+</body>

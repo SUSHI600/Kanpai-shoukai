@@ -1,6 +1,11 @@
-<?php session_start(); 
-include './db-connect.php';
+<?php session_start(); ?>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <link rel="stylesheet" href="css/recommend.css">
+<?php include './db-connect.php';
 $pdo = new PDO($connect, USER, PASS);
+include './header.php';
 
 if (!isset($_SESSION['user'])) {
     echo "ログイン/新規登録してください",'<br>';
@@ -17,16 +22,11 @@ $sql->execute([$id]);
 $data = $sql->fetch();
 
 if ($data['count'] == 0) {
-    echo "アンケートに答えてください",'<br>';
-    echo '<a href="alcoholQue.php">回答する</a>';
+    echo '<p class="ans">アンケートに答えてください</p>';
+    echo '<a class="ansgo" href="alcoholQue.php">回答する</a>';
     exit;
 }
 ?>
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <link rel="stylesheet" href="css/recommend.css">
-<?php include './header.php' ?>
     <p>おすすめ</p>
     <style>
         body {
@@ -60,6 +60,6 @@ if ($data['count'] == 0) {
         $sql->execute([$data1['taste_id'],$data1['country_id']]);
         foreach($sql as $row){
             $id = $row['id'];
-            echo '<a href="items.php?id=',$id,'">',"<img class='liquorlist' src=",$row['image'],">",'</a>';
+            echo '<a href="items.php?id=',$id,'">',"<img class='liquorlist listmargin' src=",$row['image'],">",'</a>';
         }
     ?>

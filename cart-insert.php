@@ -3,7 +3,7 @@
 <html long="ja">
 
 <head>
-    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/frame5.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
     <?php require 'header.php'; ?>
     <?php require 'db-connect.php'; ?>
@@ -30,8 +30,8 @@
                 $sql->execute(array(':add_date'=>$add_date,':quantity'=>$quantity,'item_id'=>$item_id,'user_id'=>$userid));
                 echo '<p>カートに商品を追加しました。</p>';
             }
-            echo '<form action="cart.php"><input type="submit" value="カートを見る"></form>';
-            echo '<input type="submit" onclick="history.back(-1)" value="お買い物を続ける">';
+            echo '<button class="button" onclick="location.href=\'cart.php\'">カートを見る</button>';
+            echo '<button class="button" onclick="location.href=\'search.php\'">お買い物を続ける</button>';
         }else{
             echo 'カートに商品を追加するにはログインしてください';
         }

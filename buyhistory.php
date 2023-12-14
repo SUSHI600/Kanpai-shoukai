@@ -32,7 +32,7 @@
             $history_id = [];
             $user_id = intval($_SESSION['user']['id']);
             $pdo=new PDO($connect,USER,PASS);
-            $sql=$pdo->prepare('select * from histories where user_id = ?');
+            $sql=$pdo->prepare('select * from histories where user_id = ? order by bought_date DESC');
             $sql->execute([$user_id]);
             foreach($sql as $row){
                 $id[] = $row['id'];

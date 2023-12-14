@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="css/cart.show.css">
 <?php
 if(isset($_SESSION['user'])){
     $userID = $_SESSION['user']['id'];
@@ -84,8 +85,8 @@ if(isset($_SESSION['user'])){
             echo '<div class="info_wrap">';
             echo '<p class="info">支払い方法</p>';
             echo '<div class="pay_wrap">';
-            echo '<select name="pay" class="pay">';
-            echo '<option hidden>選択してください</option>';
+            echo '<select name="pay" class="pay" id="pay">';
+            echo '<option hidden value="">選択してください</option>';
             echo '<option value="1">クレジットカード払い</option>';
             echo '<option value="2">コンビニ払い</option>';
             echo '</select>';
@@ -94,7 +95,7 @@ if(isset($_SESSION['user'])){
             echo '</div>';
     
             echo '<div class="button_wrap">';
-            echo '<div class="button prev" onclick="prev()">戻る</div>';
+            echo '<div class="button prev" onclick="prev()">TOPに戻る</div>';
             if ($liquorFlg) {
                 echo '<div class="button next" onclick="liquorBuy(', $age, ')">購入</div>';
             } else {

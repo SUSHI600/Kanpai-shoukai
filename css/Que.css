@@ -1,28 +1,15 @@
-.liquorlist {
-    width: 250px;
-    height: 250px;
-    object-fit: contain;
-}
-button{
-    border: none;
-    background: transparent;
-}
-
-.listmargin {
-    margin: 10 auto;
-}
-
-.ans{
+h3{
+    color: red;
     display: flex;
     min-height: 50vh;
     margin: 0;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 40px; 
+    font-size: 40px;
 }
 
-.ansgo {
+h5{
     display: flex;
     margin: 0;
     justify-content: center;

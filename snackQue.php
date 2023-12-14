@@ -6,7 +6,6 @@
         crossorigin="anonymous"/>
 <h1>アンケート</h1>
 <h3>おつまみの好みを選択してください</h3>
-<span onclick="location.href='login-input.php'">スキップ</span>
 <form  name="dbQue" action="Que2.php" method="post">
 <div class="snackQue-cnt">
 <ul>
@@ -28,7 +27,9 @@
 <label class="btn btn-secondary snackQue-label" for="Africa" >アフリカ</label>
 </ul>
 </div>
-<span onclick="sendpost()">完了</span>
+<div class="send-area">
+    <button class="send" onclick="sendpost()">完了</button>
+</div>
 </form>
 <script src="./js/snackQue.js"></script>
 <?php include 'footer.php'; ?>

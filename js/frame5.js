@@ -9,6 +9,12 @@ function delCart(el) {
 function liquorBuy(age) {
     var flg = false;
 
+    var pay = document.getElementById("pay");
+    
+    if(pay.value == "") {
+        alert("支払い方法を選択してください");
+        return;
+    }
     if (age >= 20) {
         flg = confirm("現在の内容で購入します。\nよろしいですか？");
     } else {
@@ -21,13 +27,18 @@ function liquorBuy(age) {
 }
 
 function buy() {
-    var flg = confirm("現在の内容で購入します。\nよろしいですか？");
+    var pay = document.getElementById("pay");
+    
+    if(pay.value == "") {
+        alert("支払い方法を選択してください");
+        return;
+    }   var flg = confirm("現在の内容で購入します。\nよろしいですか？");
 
-    if (flg) {
-        location.href = "./frame7.php";
+   if (flg) {
+       location.href = "./frame7.php";
     }
 }
 
 function prev() {
-    window.history.back();
+    location.href="./toppage.php";
 }
