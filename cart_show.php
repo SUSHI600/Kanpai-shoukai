@@ -115,5 +115,5 @@ if(isset($_SESSION['user'])){
     
     $pdo = null;
 }else{
-    echo 'ログインしてください';
+    echo '<p class="message">ログインしてください</p>';
 }

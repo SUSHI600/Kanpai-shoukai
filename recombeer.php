@@ -8,8 +8,8 @@ $pdo = new PDO($connect, USER, PASS);
 include './header.php';
 
 if (!isset($_SESSION['user'])) {
-    echo "ログイン/新規登録してください",'<br>';
-    echo '<a href="login-input.php">ログイン/新規登録</a>';
+    echo '<p class="ans">ログイン/新規登録してください</p>';
+    echo '<p class="ansgo"><a href="login-input.php">ログイン/新規登録</a></p>';
     exit;
 }
 
