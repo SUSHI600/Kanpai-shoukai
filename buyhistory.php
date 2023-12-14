@@ -79,7 +79,7 @@
             echo '</table>';
             echo '</div>';
         }else{
-            echo '購入履歴を閲覧するにはログインしてください';
+            echo '<p class="message">購入履歴を閲覧するにはログインしてください</p>';
         }
     ?>
     <?php require 'footer.php'; ?>

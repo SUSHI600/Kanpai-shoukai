@@ -24,16 +24,16 @@
                 $newQuantity = $existingItem['quantity'] + $quantity;
                 $updateCartItem = $pdo->prepare('UPDATE carts SET quantity = :quantity WHERE item_id = :item_id AND user_id = :user_id');
                 $updateCartItem->execute(array(':quantity' => $newQuantity, ':item_id' => $item_id, ':user_id' => $userid));
-                echo '<p>カートに商品を追加しました。</p>';
+                echo '<p class="message">カートに商品を追加しました。</p>';
             } else {
                 $sql = $pdo->prepare('INSERT INTO carts(add_date,quantity,item_id,user_id) VALUES(:add_date,:quantity,:item_id,:user_id)');
                 $sql->execute(array(':add_date'=>$add_date,':quantity'=>$quantity,'item_id'=>$item_id,'user_id'=>$userid));
-                echo '<p>カートに商品を追加しました。</p>';
+                echo '<p class="message">カートに商品を追加しました。</p>';
             }
             echo '<button class="button" onclick="location.href=\'cart.php\'">カートを見る</button>';
             echo '<button class="button" onclick="location.href=\'search.php\'">お買い物を続ける</button>';
         }else{
-            echo 'カートに商品を追加するにはログインしてください';
+            echo '<p class="message">カートに商品を追加するにはログインしてください</p>';
         }
     ?>
     <?php require 'footer.php'; ?>
