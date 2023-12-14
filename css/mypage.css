@@ -55,19 +55,8 @@
     max-width: 200px;
 }
 
-.submit {
-    padding: 5px 20px;
-    width: fit-content;
-    margin: 0 auto;
-    position: relative;
-    margin-left: 0;
-    cursor: pointer;
-    color: gray;
-    text-decoration: underline;
-    text-underline-offset: 2px;
-}
-
 .submit_wrap {
     max-width: 400px;
     margin: 0 auto;
+    text-align: center;
 }

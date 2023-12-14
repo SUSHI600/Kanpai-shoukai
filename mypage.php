@@ -40,7 +40,7 @@ if (isset($_SESSION['user'])) {
         echo '</div>';
 
         echo '<div class="submit_wrap">';
-        echo '<button class="submit" onclick="withdrawal()">退会</button>';
+        echo '<button class="button" onclick="withdrawal()">退会</button>';
         echo '</div>';
     }
 
