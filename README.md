@@ -1,2 +1,0 @@
-# Kanpai-shoukai
-a
